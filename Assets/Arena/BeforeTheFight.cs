@@ -8,11 +8,25 @@ public class BeforeTheFight : MonoBehaviour
     [Header("Disabled on duels")]
     public GameObject mainCamera;
     public GameObject uiCanvas;
-    public GameObject firstCamera;
+
+    [Header("on Tournaments")]
+    public GameObject duelCanvas;
+    public GameObject tournamentCanvas;
+
+    public bool isTournament;
 
     void Start()
     {
-        firstCamera.SetActive(true);
+        if (!isTournament)
+        {
+            duelCanvas.SetActive(true);
+            tournamentCanvas.SetActive(false);
+        }
+        if (isTournament)
+        {
+            tournamentCanvas.SetActive(true);
+            duelCanvas.SetActive(false);
+        }
         mainCamera.SetActive(false);
         uiCanvas.SetActive(false);
     }
@@ -24,9 +38,15 @@ public class BeforeTheFight : MonoBehaviour
 
     public void StartFight()
     {
-        firstCamera.SetActive(false);
+        if (isTournament)
+        {
+            tournamentCanvas.SetActive(false);
+        }
+        if (!isTournament)
+        {
+            duelCanvas.SetActive(false);
+        }
         mainCamera.SetActive(true);
         uiCanvas.SetActive(true);
-        gameObject.SetActive(false);
     }
 }
