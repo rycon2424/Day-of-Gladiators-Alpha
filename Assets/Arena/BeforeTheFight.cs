@@ -26,7 +26,6 @@ public class BeforeTheFight : MonoBehaviour
         }
         if (isTournament)
         {
-            StartCoroutine(MusicBoss());
             tournamentCanvas.SetActive(true);
             duelCanvas.SetActive(false);
         }
@@ -34,9 +33,8 @@ public class BeforeTheFight : MonoBehaviour
         uiCanvas.SetActive(false);
     }
 
-    IEnumerator MusicBoss()
+    public void MusicBoss()
     {
-        yield return new WaitForSeconds(16);
         bossFightOst.SetActive(true);
     }
 

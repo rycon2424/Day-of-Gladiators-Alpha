@@ -96,7 +96,14 @@ public class WinLoseCanvas : MonoBehaviour {
     {
         if (xpBar.value < currentXP)
         {
-            xpBar.value = xpBar.value + 6f;
+            if (PlayerStatsSingleton.level > 1)
+            {
+                xpBar.value = xpBar.value + 6f * PlayerStatsSingleton.level;
+            }
+            else
+            {
+                xpBar.value = xpBar.value + 6f;
+            }
         }
         if (xpBar.value == currentXP || xpBar.value > currentXP)
         {
