@@ -9,6 +9,7 @@ public class StatsButtonHover : StatsBehaviour
     public GameObject stats;
 
     public Text Name;
+    public Text LEVEL;
     public Text STR;
     public Text END;
     public Text DEX;
@@ -62,6 +63,7 @@ public class StatsButtonHover : StatsBehaviour
 
     void Update ()
     {
+        LEVEL.text = PlayerStatsSingleton.level.ToString();
         STR.text = lightDamage.ToString() + "L " + mediumDamage.ToString() + "M " + heavyDamage.ToString() + "H";
         END.text = stamina.ToString() + " / " + stamina.ToString();
         DEX.text = movementSpeed.ToString();

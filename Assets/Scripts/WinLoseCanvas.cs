@@ -70,7 +70,7 @@ public class WinLoseCanvas : MonoBehaviour {
 
         if (enemyValues.hp < 1 && doOnce == true)
         {
-            goldEarnedLost = Random.Range(200, 801);
+            goldEarnedLost = Random.Range(200, 801) + (50 * PlayerStatsSingleton.level);
             layOut.SetActive(true);
             fightCanvas.SetActive(false);
             
@@ -78,7 +78,7 @@ public class WinLoseCanvas : MonoBehaviour {
             textWinLose.text = "You won and earned some gold, well played! (" + goldEarnedLost.ToString() + ")";
             gold.text = Money.coin.ToString();
 
-            xpGained = Random.Range(minimalXP, maximalXP);
+            xpGained = Random.Range(minimalXP, maximalXP) + (100 * PlayerStatsSingleton.level);
             currentXP = currentXP + xpGained;
             currentXPT.text = currentXP.ToString();
             maxpXPText.text =  "/ " + maxXP.ToString();

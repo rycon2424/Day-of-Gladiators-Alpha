@@ -18,11 +18,6 @@ public class Money : MonoBehaviour {
     {
         coinDisplay.text = coin.ToString();
 
-        if (Input.GetKey(KeyCode.L))
-        {
-            coin = coin + 250;
-        }
-
         if (coin < 0)
         {
             coin = 0;
