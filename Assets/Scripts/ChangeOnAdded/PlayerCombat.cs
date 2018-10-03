@@ -74,6 +74,7 @@ public class PlayerCombat : StatsBehaviour {
 
         playerTurn = true;
 
+        #region Stats Calculation
         hp = baseHp + (15 * CharacterCreation.VIT);
         stamina = baseStamina + (10 * CharacterCreation.END);
         movementSpeed = baseSpeed + (0.7f * CharacterCreation.DEX);
@@ -89,6 +90,9 @@ public class PlayerCombat : StatsBehaviour {
 
         armour = helmArmour + bodyArmour + shoulderArmour + glovesArmour + legsArmour + shoesArmour + shieldArmour;
 
+        #endregion
+
+        #region Set Strings & Max Values
         maxHP.text = hp.ToString();
         maxStamina.text = stamina.ToString();
 
@@ -105,6 +109,8 @@ public class PlayerCombat : StatsBehaviour {
         {
             shieldIcon.SetActive(false);
         }
+
+        #endregion
 
         #region LuckChance
         lightChance = 70 + CharacterCreation.LUC;

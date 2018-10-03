@@ -14,10 +14,12 @@ public class LevelUpMenu : MonoBehaviour {
     public Text vitalityText;
     public Text luckText;
     public Text magickaText;
+    [Header("Text")]
+    public Text levelupText;
 
-	void Start ()
+    void Start ()
     {
-
+        levelupText.text = "Congratulations! You just reached Level " + PlayerStatsSingleton.level;
     }
 	
 	void Update ()

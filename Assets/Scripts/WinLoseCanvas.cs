@@ -26,6 +26,10 @@ public class WinLoseCanvas : MonoBehaviour {
     public Text maxpXPText;
     public Slider xpBar;
 
+    [Header("ImportantXP")]
+    public int minimalXP;
+    public int maximalXP;
+
     public GameObject layOut, fightCanvas, playerButtons, toVillage;
     public AudioSource levelUpSound;
 
@@ -35,7 +39,7 @@ public class WinLoseCanvas : MonoBehaviour {
         doOnceLevelUp = true;
         doOnce = true;
         layOut.SetActive(false);
-        maxXP = (250 * 2) * PlayerStatsSingleton.level;
+        maxXP = 500 * PlayerStatsSingleton.level;
         xpBar.maxValue = maxXP;
 	}
 	
@@ -74,7 +78,7 @@ public class WinLoseCanvas : MonoBehaviour {
             textWinLose.text = "You won and earned some gold, well played! (" + goldEarnedLost.ToString() + ")";
             gold.text = Money.coin.ToString();
 
-            xpGained = Random.Range(400, 800);
+            xpGained = Random.Range(minimalXP, maximalXP);
             currentXP = currentXP + xpGained;
             currentXPT.text = currentXP.ToString();
             maxpXPText.text =  "/ " + maxXP.ToString();

@@ -1736,6 +1736,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Village
+  tournamentButton: 0
+  tournamentMap: 
+  whatIsTheLevelcap: 0
+  talkCloud: {fileID: 0}
+  cantEnter: {fileID: 0}
+  duelButton: {fileID: 0}
 --- !u!4 &519328244 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4444773566431578, guid: ed698dba3646a3b4497a0ac084e6a843,
@@ -4098,6 +4104,8 @@ MonoBehaviour:
   maxXP: 500
   maxpXPText: {fileID: 1237623037}
   xpBar: {fileID: 684903808}
+  minimalXP: 200
+  maximalXP: 800
   layOut: {fileID: 123097970}
   fightCanvas: {fileID: 669275718}
   playerButtons: {fileID: 1880161915}
