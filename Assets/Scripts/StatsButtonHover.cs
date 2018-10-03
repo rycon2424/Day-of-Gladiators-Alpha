@@ -8,6 +8,7 @@ public class StatsButtonHover : StatsBehaviour
 
     public GameObject stats;
 
+    public Text Name;
     public Text STR;
     public Text END;
     public Text DEX;
@@ -18,6 +19,7 @@ public class StatsButtonHover : StatsBehaviour
 
     void Start ()
     {
+        Name.text = CharacterCreation.username;
         baseHp = 15;
         baseDamage = 2;
         baseSpeed = 1;
@@ -30,9 +32,9 @@ public class StatsButtonHover : StatsBehaviour
         magicDamage = baseMgcDamage + (10 * CharacterCreation.CHAR);
         
         #region LuckChance
-        lightChance = 70 + CharacterCreation.LUC;
-        mediumChance = 45 + CharacterCreation.LUC;
-        heavyChance = 20 + CharacterCreation.LUC;
+        lightChance = 70 + CharacterCreation.LUC - 1;
+        mediumChance = 45 + CharacterCreation.LUC - 1;
+        heavyChance = 20 + CharacterCreation.LUC - 1;
         #endregion
 
         stats.SetActive(false);

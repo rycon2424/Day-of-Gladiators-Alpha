@@ -113,9 +113,9 @@ public class PlayerCombat : StatsBehaviour {
         #endregion
 
         #region LuckChance
-        lightChance = 70 + CharacterCreation.LUC;
-        mediumChance = 45 + CharacterCreation.LUC;
-        heavyChance = 20 + CharacterCreation.LUC;
+        lightChance = 70 + CharacterCreation.LUC - 1;
+        mediumChance = 45 + CharacterCreation.LUC - 1;
+        heavyChance = 20 + CharacterCreation.LUC - 1;
         #endregion
 
     }

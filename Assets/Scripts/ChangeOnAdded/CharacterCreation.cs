@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class CharacterCreation : MonoBehaviour {
 
+    [Header("Name")]
+    public InputField usernameInput;
+    public static string username;
     [Header("HairStyle")]
     public SpriteRenderer currentHair;
     public Sprite[] hairs = new Sprite[5];
@@ -66,6 +69,14 @@ public class CharacterCreation : MonoBehaviour {
         VIT = vitality;
         LUC = luck;
         CHAR = charisma;
+        if (usernameInput.text == "")
+        {
+            username = "nonameretard";
+        }
+        else
+        {
+            username = usernameInput.text;
+        }
         SceneManager.LoadScene("Village");
     }
 

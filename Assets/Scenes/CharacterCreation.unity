@@ -1941,6 +1941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c8fb123412ad941b382c6857908612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usernameInput: {fileID: 615373474}
   currentHair: {fileID: 1935162509}
   hairs:
   - {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
@@ -2275,13 +2276,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 615373475}
   m_TextComponent: {fileID: 1650780809}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 5
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 6
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 4
   m_CharacterLimit: 11
   m_OnEndEdit:
     m_PersistentCalls:
@@ -4030,7 +4031,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4b81eb7dc2d5e5e47b26bc3025b5cf32, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 45
     m_Alignment: 0
