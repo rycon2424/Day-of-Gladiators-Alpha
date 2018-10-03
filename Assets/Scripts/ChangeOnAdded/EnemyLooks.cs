@@ -36,6 +36,10 @@ public class EnemyLooks : MonoBehaviour {
     public Sprite[] shoes1 = new Sprite[5];
     public Sprite[] shoes2 = new Sprite[5];
 
+    [Header("BossSpecific")]
+    public Sprite[] BossWeapons = new Sprite[1];
+    public Sprite[] Boss1 = new Sprite[9];
+
     [Header("Armours")]
     public SpriteRenderer helm;
     public SpriteRenderer body;
@@ -64,6 +68,14 @@ public class EnemyLooks : MonoBehaviour {
 
     void Start()
     {
+        if (BeforeTheFight.isTournament)
+        {
+            specialEnemy = true;
+        }
+        else
+        {
+            specialEnemy = false;
+        }
         if (!specialEnemy)
         {
             CasualEnemy();
@@ -106,21 +118,43 @@ public class EnemyLooks : MonoBehaviour {
 
     void Update()
     {
-        firstWeapon.sprite = weapons[weaponE];
+        if (!specialEnemy)
+        {
+            firstWeapon.sprite = weapons[weaponE];
 
-        helm.sprite = helms[helmE];
-        body.sprite = bodyarmours[bodyE];
+            helm.sprite = helms[helmE];
+            body.sprite = bodyarmours[bodyE];
 
-        shoulderLeft.sprite = shoulders1[shoulderE];
-        shoulderRight.sprite = shoulders2[shoulderE];
-        gloveLeft.sprite = gloves1[gloveE];
-        gloveRight.sprite = gloves2[gloveE];
-        legLeft.sprite = legs1[legsE];
-        legRight.sprite = legs2[legsE];
-        shoeLeft.sprite = shoes1[shoesE];
-        shoeRight.sprite = shoes2[shoesE];
+            shoulderLeft.sprite = shoulders1[shoulderE];
+            shoulderRight.sprite = shoulders2[shoulderE];
+            gloveLeft.sprite = gloves1[gloveE];
+            gloveRight.sprite = gloves2[gloveE];
+            legLeft.sprite = legs1[legsE];
+            legRight.sprite = legs2[legsE];
+            shoeLeft.sprite = shoes1[shoesE];
+            shoeRight.sprite = shoes2[shoesE];
 
-        currentHair.sprite = hairs[hairE];
-        currentBeard.sprite = beards[beardE];
+            currentHair.sprite = hairs[hairE];
+            currentBeard.sprite = beards[beardE];
+        }
+        if (specialEnemy)
+        {
+            firstWeapon.sprite = BossWeapons[0];
+
+            helm.sprite = Boss1[0];
+            body.sprite = Boss1[1];
+
+            shoulderLeft.sprite = Boss1[2];
+            shoulderRight.sprite = Boss1[3];
+            gloveLeft.sprite = Boss1[4];
+            gloveRight.sprite = Boss1[5];
+            legLeft.sprite = Boss1[6];
+            legRight.sprite = Boss1[7];
+            shoeLeft.sprite = Boss1[8];
+            shoeRight.sprite = Boss1[9];
+
+            currentHair.sprite = hairs[0];
+            currentBeard.sprite = beards[0];
+        }
     }
 }

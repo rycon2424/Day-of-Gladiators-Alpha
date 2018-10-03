@@ -9,21 +9,24 @@ public class BeforeTheFight : MonoBehaviour
     public GameObject mainCamera;
     public GameObject uiCanvas;
 
-    [Header("on Tournaments")]
+    [Header("On Tournaments")]
     public GameObject duelCanvas;
     public GameObject tournamentCanvas;
+    public GameObject bossFightOst;
 
-    public bool isTournament;
+    public static bool isTournament;
 
     void Start()
     {
         if (!isTournament)
         {
+            bossFightOst.SetActive(false);
             duelCanvas.SetActive(true);
             tournamentCanvas.SetActive(false);
         }
         if (isTournament)
         {
+            StartCoroutine(MusicBoss());
             tournamentCanvas.SetActive(true);
             duelCanvas.SetActive(false);
         }
@@ -31,8 +34,14 @@ public class BeforeTheFight : MonoBehaviour
         uiCanvas.SetActive(false);
     }
 
-    void Update()
+    IEnumerator MusicBoss()
     {
+        yield return new WaitForSeconds(16);
+        bossFightOst.SetActive(true);
+    }
+
+    void Update()
+    { 
 
     }
 
