@@ -61,6 +61,7 @@ public class PlayerCombat : StatsBehaviour {
     public static int helmArmour;
     public static int bodyArmour;
     public static int shoulderArmour;
+    public static int glovesArmour;
     public static int legsArmour;
     public static int shoesArmour;
     public static int shieldArmour;
@@ -86,7 +87,7 @@ public class PlayerCombat : StatsBehaviour {
         heavyDamage = baseDamage + (4 * CharacterCreation.STR) + weaponDamage;
         #endregion
 
-        armour = helmArmour + bodyArmour + shoulderArmour + legsArmour + shoesArmour + shieldArmour;
+        armour = helmArmour + bodyArmour + shoulderArmour + glovesArmour + legsArmour + shoesArmour + shieldArmour;
 
         maxHP.text = hp.ToString();
         maxStamina.text = stamina.ToString();

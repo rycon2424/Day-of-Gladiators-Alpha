@@ -2218,6 +2218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
+  tournamentMap: ArenaDuel
 --- !u!1 &183315478
 GameObject:
   m_ObjectHideFlags: 0
@@ -9034,6 +9035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: ArenaDuel
+  tournamentMap: 
 --- !u!1 &864070329
 GameObject:
   m_ObjectHideFlags: 0

@@ -115,7 +115,8 @@ public class EnemyCombat : StatsBehaviour
         DamageBasedOnTiers();
 
         armour = PlayerCombat.helmArmour + PlayerCombat.bodyArmour + PlayerCombat.shoulderArmour
-               + PlayerCombat.legsArmour + PlayerCombat.shoesArmour + PlayerCombat.shieldArmour + (Random.Range(-10, 20));
+               + PlayerCombat.legsArmour + PlayerCombat.shoesArmour + PlayerCombat.glovesArmour
+               + PlayerCombat.shieldArmour + (Random.Range(-10, 20));
 
         if (armour < 1)
         {

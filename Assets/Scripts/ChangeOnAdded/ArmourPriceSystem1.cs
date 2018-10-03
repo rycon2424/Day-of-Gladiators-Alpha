@@ -313,6 +313,34 @@ public class ArmourPriceSystem1 : MonoBehaviour {
             }
         }
 
+        if (gloves)
+        {
+            if (numberType == 1)
+            {
+                PlayerCombat.glovesArmour = armourValue;
+            }
+            if (numberType == 2)
+            {
+                PlayerCombat.glovesArmour = armourValue;
+            }
+            if (numberType == 3)
+            {
+                PlayerCombat.glovesArmour = armourValue;
+            }
+            if (numberType == 4)
+            {
+                PlayerCombat.glovesArmour = armourValue;
+            }
+            if (numberType == 5)
+            {
+                PlayerCombat.glovesArmour = armourValue;
+            }
+            if (numberType == 6)
+            {
+                PlayerCombat.glovesArmour = armourValue;
+            }
+        }
+
         if (legs)
         {
             if (numberType == 1)
