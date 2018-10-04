@@ -10,6 +10,7 @@ public class PlayerCombat : StatsBehaviour {
     public Animator anim;
     public static int tierWeapon;
     public GameObject buttons;
+    public GameObject displayChance;
 
     [Header("HitDetection")]
     private Vector3 target;
@@ -387,6 +388,7 @@ public class PlayerCombat : StatsBehaviour {
     IEnumerator Resetturn()
     {
         StartCoroutine(ButtonVis());
+        displayChance.SetActive(false);
         yield return new WaitForSeconds(0.25f);
         anim.SetInteger("State", 0);
         yield return new WaitForSeconds(0.25f);

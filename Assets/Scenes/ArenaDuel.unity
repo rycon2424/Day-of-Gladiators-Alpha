@@ -1077,6 +1077,15 @@ Prefab:
       propertyPath: enemyFunction
       value: 
       objectReference: {fileID: 928608271}
+    - target: {fileID: 1833293991758148, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: displayChance
+      value: 
+      objectReference: {fileID: 888242198}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
   m_IsPrefabParent: 0
@@ -3341,6 +3350,11 @@ RectTransform:
   m_AnchoredPosition: {x: 486.2, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &888242198 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1833293991758148, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+    type: 2}
+  m_PrefabInternal: {fileID: 296674857}
 --- !u!1 &915949349
 GameObject:
   m_ObjectHideFlags: 0
