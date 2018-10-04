@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelUp.unity
     guid: f85ec57cc14db014eac6c5e6433dd4cf
+  - enabled: 1
+    path: Assets/Scenes/DemoEnd.unity
+    guid: 31d194066c9795443b96e35c5ac65928
   m_configObjects: {}

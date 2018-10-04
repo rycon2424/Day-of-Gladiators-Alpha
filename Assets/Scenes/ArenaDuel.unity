@@ -2037,7 +2037,7 @@ MonoBehaviour:
   - Laecanius
   - Papinius
   - Ivkovic
-  BossName: Frodo
+  BossName: Metafor of Sorrow
   duelCanvas: {fileID: 419929486}
   tournamentCanvas: {fileID: 1022201341}
   bossFightOst: {fileID: 449582059}
@@ -4444,6 +4444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Village
   levelUpScene: LevelUp
+  EndDemo: DemoEnd
   oldLevel: 0
 --- !u!82 &1188052959
 AudioSource:
@@ -5628,7 +5629,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4b81eb7dc2d5e5e47b26bc3025b5cf32, type: 3}
     m_FontSize: 60
     m_FontStyle: 2
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 4

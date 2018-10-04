@@ -7,6 +7,9 @@ public class LevelUpCheck : MonoBehaviour {
 
     public string sceneName;
     public string levelUpScene;
+
+    public string EndDemo;
+
     public int oldLevel;
 
     private void Start()
@@ -15,13 +18,21 @@ public class LevelUpCheck : MonoBehaviour {
     }
     public void SceneSwap()
     {
-        if (oldLevel == PlayerStatsSingleton.level)
+        if (!BeforeTheFight.isTournament)
         {
-            SceneManager.LoadScene(sceneName);
+            if (oldLevel == PlayerStatsSingleton.level)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+            else
+            {
+                SceneManager.LoadScene(levelUpScene);
+            }
         }
-        else
+
+        if (BeforeTheFight.isTournament)
         {
-            SceneManager.LoadScene(levelUpScene);
+            SceneManager.LoadScene(EndDemo);
         }
     }
 }

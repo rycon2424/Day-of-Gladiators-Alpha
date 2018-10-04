@@ -78,7 +78,7 @@ public class WinLoseCanvas : MonoBehaviour {
             textWinLose.text = "You won and earned some gold, well played! (" + goldEarnedLost.ToString() + ")";
             gold.text = Money.coin.ToString();
 
-            xpGained = Random.Range(minimalXP, maximalXP) + (100 * PlayerStatsSingleton.level);
+            xpGained = Random.Range(minimalXP, maximalXP) + (45 * PlayerStatsSingleton.level);
             currentXP = currentXP + xpGained;
             currentXPT.text = currentXP.ToString();
             maxpXPText.text =  "/ " + maxXP.ToString();
