@@ -608,13 +608,14 @@ GameObject:
   - component: {fileID: 224926985241293990}
   - component: {fileID: 222515939974532940}
   - component: {fileID: 114637301662885378}
+  - component: {fileID: 225960731134287030}
   m_Layer: 5
   m_Name: HitChance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1890911985233424
 GameObject:
   m_ObjectHideFlags: 1
@@ -1839,6 +1840,7 @@ MonoBehaviour:
   StaminaRegen: 4
   anim: {fileID: 95551688864042046}
   buttons: {fileID: 1131127620865678}
+  displayChance: {fileID: 1833293991758148}
   enemy: {fileID: 0}
   currentHp: {fileID: 0}
   maxHP: {fileID: 0}
@@ -3790,8 +3792,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0012795529, y: 2.0207472}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.0012795529, y: 1.832}
+  m_SizeDelta: {x: 100, y: 62.9089}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224978025819123438
 RectTransform:
@@ -3811,3 +3813,14 @@ RectTransform:
   m_AnchoredPosition: {x: 1.327, y: 0.321}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225960731134287030
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833293991758148}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

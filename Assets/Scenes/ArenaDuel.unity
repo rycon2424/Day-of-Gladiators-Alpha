@@ -1077,15 +1077,6 @@ Prefab:
       propertyPath: enemyFunction
       value: 
       objectReference: {fileID: 928608271}
-    - target: {fileID: 1833293991758148, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: displayChance
-      value: 
-      objectReference: {fileID: 888242198}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
   m_IsPrefabParent: 0
@@ -1379,7 +1370,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 14
     m_MaxSize: 30
-    m_Alignment: 5
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3350,11 +3341,6 @@ RectTransform:
   m_AnchoredPosition: {x: 486.2, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &888242198 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1833293991758148, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 296674857}
 --- !u!1 &915949349
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,7 +8140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99.8, y: 0}
+  m_AnchoredPosition: {x: -104.3, y: 0}
   m_SizeDelta: {x: 154.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020373334
@@ -8183,7 +8169,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 14
     m_MaxSize: 30
-    m_Alignment: 3
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
