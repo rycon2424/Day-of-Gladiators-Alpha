@@ -141,13 +141,13 @@ public class EnemyCombat : StatsBehaviour
         #region Damage
         lightDamage = baseDamage + (1 * strenght) + weaponDamage;
         mediumDamage = baseDamage + (2 * strenght) + weaponDamage;
-        heavyDamage = baseDamage + (4 * strenght) + weaponDamage;
+        heavyDamage = baseDamage + (7 * strenght) + weaponDamage;
         #endregion
 
         #region LuckChance
         lightChance = 70 + luck;
-        mediumChance = 45 + luck;
-        heavyChance = 20 + luck;
+        mediumChance = 50 + luck;
+        heavyChance = 30 + luck;
         #endregion
 
     }

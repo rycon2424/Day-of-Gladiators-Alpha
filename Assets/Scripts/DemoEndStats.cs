@@ -12,10 +12,20 @@ public class DemoEndStats : MonoBehaviour {
     public Text LUCK;
     public Text MAG;
 
-   
-	// Update is called once per frame
-	void Update ()
+    public Text lightC;
+    public Text mediumC;
+    public Text heavyC;
+
+    public static int lightCounter;
+    public static int mediumCounter;
+    public static int heavyCounter;
+    
+    void Update ()
     {
+        lightC.text = lightCounter.ToString();
+        mediumC.text = mediumCounter.ToString();
+        heavyC.text = heavyCounter.ToString();
+
         STR.text = CharacterCreation.STR.ToString();
         END.text = CharacterCreation.END.ToString();
         DEX.text = CharacterCreation.DEX.ToString();
@@ -23,4 +33,5 @@ public class DemoEndStats : MonoBehaviour {
         LUCK.text = CharacterCreation.LUC.ToString();
         MAG.text = CharacterCreation.CHAR.ToString();
     }
+
 }

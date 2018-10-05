@@ -29,13 +29,13 @@ public class StatsButtonHover : StatsBehaviour
         
         hp = baseHp + (15 * CharacterCreation.VIT);
         stamina = baseStamina + (10 * CharacterCreation.END);
-        movementSpeed = baseSpeed + (0.7f * CharacterCreation.DEX);
+        movementSpeed = baseSpeed + (0.4f * CharacterCreation.DEX);
         magicDamage = baseMgcDamage + (10 * CharacterCreation.CHAR);
         
         #region LuckChance
         lightChance = 70 + CharacterCreation.LUC - 1;
-        mediumChance = 45 + CharacterCreation.LUC - 1;
-        heavyChance = 20 + CharacterCreation.LUC - 1;
+        mediumChance = 50 + CharacterCreation.LUC - 1;
+        heavyChance = 30 + CharacterCreation.LUC - 1;
         #endregion
 
         stats.SetActive(false);
@@ -80,7 +80,7 @@ public class StatsButtonHover : StatsBehaviour
 
         lightDamage = baseDamage + (1 * CharacterCreation.STR) + weaponDamage;
         mediumDamage = baseDamage + (2 * CharacterCreation.STR) + weaponDamage;
-        heavyDamage = baseDamage + (4 * CharacterCreation.STR) + weaponDamage;
+        heavyDamage = baseDamage + (7 * CharacterCreation.STR) + weaponDamage;
         #endregion
     }
 

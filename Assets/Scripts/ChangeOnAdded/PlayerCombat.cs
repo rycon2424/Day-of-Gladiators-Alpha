@@ -87,7 +87,7 @@ public class PlayerCombat : StatsBehaviour {
         #region Damage
         lightDamage = baseDamage + (1 * CharacterCreation.STR) + weaponDamage;
         mediumDamage = baseDamage + (2 * CharacterCreation.STR) + weaponDamage;
-        heavyDamage = baseDamage + (4 * CharacterCreation.STR) + weaponDamage;
+        heavyDamage = baseDamage + (7 * CharacterCreation.STR) + weaponDamage;
         #endregion
 
         armour = helmArmour + bodyArmour + shoulderArmour + glovesArmour + legsArmour + shoesArmour + shieldArmour;
@@ -116,8 +116,8 @@ public class PlayerCombat : StatsBehaviour {
 
         #region LuckChance
         lightChance = 70 + CharacterCreation.LUC - 1;
-        mediumChance = 45 + CharacterCreation.LUC - 1;
-        heavyChance = 20 + CharacterCreation.LUC - 1;
+        mediumChance = 50 + CharacterCreation.LUC - 1;
+        heavyChance = 30 + CharacterCreation.LUC - 1;
         #endregion
 
     }
@@ -303,6 +303,7 @@ public class PlayerCombat : StatsBehaviour {
         }
         else
         {
+            DemoEndStats.lightCounter++;
             stamina = stamina - LightCost;
             buttons.SetActive(false);
             anim.SetInteger("State", 2);
@@ -335,6 +336,7 @@ public class PlayerCombat : StatsBehaviour {
         }
         else
         {
+            DemoEndStats.mediumCounter++;
             stamina = stamina - MediumCost;
             buttons.SetActive(false);
             anim.SetInteger("State", 3);
@@ -367,6 +369,7 @@ public class PlayerCombat : StatsBehaviour {
         }
         else
         {
+            DemoEndStats.heavyCounter++;
             stamina = stamina - HeavyCost;
             buttons.SetActive(false);
             anim.SetInteger("State", 4);
