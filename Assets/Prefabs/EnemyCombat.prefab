@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bfe6857babebb4983d18a4377bfea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialEnemy: 0
+  specialEnemy: 1
   currentHair: {fileID: 212003960220738630}
   hairs:
   - {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
@@ -1127,6 +1127,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 405a45523e60c694f9919d3f3e5b3288, type: 3}
   - {fileID: 21300000, guid: 3edc967f01d1a044597e6c8a7ded7f47, type: 3}
   - {fileID: 21300000, guid: 64f7b6f2fc025404baa90322bf6b959a, type: 3}
+  BossWeapons:
+  - {fileID: 21300000, guid: f9a6aa5ddb669f04080fe8ed74bd77f9, type: 3}
+  Boss1:
+  - {fileID: 21300000, guid: 58eaf496cc453c24da29c5fc49412390, type: 3}
+  - {fileID: 21300000, guid: da1ea5f412bc15146815f3112f5ac5a4, type: 3}
+  - {fileID: 21300000, guid: f2cdc063a3fa7c9459f7fe1ec0dcf78b, type: 3}
+  - {fileID: 21300000, guid: 31eced0ecd851e34880c818c71c2fb80, type: 3}
+  - {fileID: 21300000, guid: b13b81c45faa10e40972a0c51af1a521, type: 3}
+  - {fileID: 21300000, guid: d5a4dedf8a6ed5d4483747cdcbbf58e2, type: 3}
+  - {fileID: 21300000, guid: 46c65ec752e171a48a0efdb381c60225, type: 3}
+  - {fileID: 21300000, guid: 6fb6d6fee20326a4c89dd9ee767bb5a6, type: 3}
+  - {fileID: 21300000, guid: d87871528a319294189fc7fda65b628d, type: 3}
+  - {fileID: 21300000, guid: a3b56ec1288478c438033048dd73cc5d, type: 3}
   helm: {fileID: 212544636632805860}
   body: {fileID: 212812863592205208}
   shoulderLeft: {fileID: 212714051756474832}
@@ -1240,7 +1253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHp: 15
   baseDamage: 2
-  baseSpeed: 1
+  baseSpeed: 2
   baseStamina: 30
   baseMgcDamage: 20
   hp: 0
@@ -1298,6 +1311,29 @@ MonoBehaviour:
   damageLogo: {fileID: 114853925494698592}
   blood: {fileID: 21300000, guid: bd8efa535ccfc3e4f948b7a7282d41fb, type: 3}
   shield: {fileID: 21300000, guid: da739a72685c19a47aad17dc79bd54e8, type: 3}
+  ac: {fileID: 0}
+  attacks:
+  - {fileID: 8300000, guid: 59d93b15e1f89254a8aa96e9cedf4d09, type: 3}
+  - {fileID: 8300000, guid: aa1fc4b11575ca14aac4452f54d665e1, type: 3}
+  - {fileID: 8300000, guid: 4bb1976e5573fa64ba44e134d6f97bbf, type: 3}
+  - {fileID: 8300000, guid: 805b17d82ab224848a93786ebca691f9, type: 3}
+  - {fileID: 8300000, guid: 96e528e6ae3cad749be2bf07885c003b, type: 3}
+  - {fileID: 8300000, guid: 6ebc8ccaa8e752a4e8d7ae0d77f2e2ef, type: 3}
+  - {fileID: 8300000, guid: 13068b89088ab744ea0ae9a821dbe8e5, type: 3}
+  - {fileID: 8300000, guid: 9c07d6f56e83ecc41b2fbbef374ee1fe, type: 3}
+  - {fileID: 8300000, guid: d3e0dbf2ac72b5a4e9f02512f3f2b0a5, type: 3}
+  - {fileID: 8300000, guid: 6a2ea2fc0a6db28488170fab276c6cf2, type: 3}
+  - {fileID: 8300000, guid: c4db04eb669bf1344b54eb1547e8b81e, type: 3}
+  - {fileID: 8300000, guid: e8aaadd85cb740b44bd724f3b7125370, type: 3}
+  - {fileID: 8300000, guid: e8d5f1fed50fffa47a7e6f08bf98f629, type: 3}
+  - {fileID: 8300000, guid: 822cb3838ad605f4a846af27a65927bf, type: 3}
+  - {fileID: 8300000, guid: 310d4aaa3e36b56418df9e0122ef7abc, type: 3}
+  hits:
+  - {fileID: 0}
+  - {fileID: 0}
+  blocks:
+  - {fileID: 0}
+  - {fileID: 0}
   playerFunction: {fileID: 0}
 --- !u!212 &212003960220738630
 SpriteRenderer:

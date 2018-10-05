@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHp: 15
   baseDamage: 2
-  baseSpeed: 1
+  baseSpeed: 2
   baseStamina: 30
   baseMgcDamage: 20
   hp: 0
@@ -1840,6 +1840,7 @@ MonoBehaviour:
   StaminaRegen: 4
   anim: {fileID: 95551688864042046}
   buttons: {fileID: 1131127620865678}
+  walkBackButton: {fileID: 1998005220914538}
   displayChance: {fileID: 1833293991758148}
   enemy: {fileID: 0}
   currentHp: {fileID: 0}
@@ -1869,13 +1870,24 @@ MonoBehaviour:
   damageLogo: {fileID: 114942317585142942}
   blood: {fileID: 21300000, guid: bd8efa535ccfc3e4f948b7a7282d41fb, type: 3}
   shield: {fileID: 21300000, guid: da739a72685c19a47aad17dc79bd54e8, type: 3}
+  ac: {fileID: 0}
   attacks:
-  - {fileID: 0}
-  - {fileID: 0}
-  hitsArmour:
-  - {fileID: 0}
-  - {fileID: 0}
-  hitsFlesh:
+  - {fileID: 8300000, guid: 59d93b15e1f89254a8aa96e9cedf4d09, type: 3}
+  - {fileID: 8300000, guid: aa1fc4b11575ca14aac4452f54d665e1, type: 3}
+  - {fileID: 8300000, guid: 4bb1976e5573fa64ba44e134d6f97bbf, type: 3}
+  - {fileID: 8300000, guid: 805b17d82ab224848a93786ebca691f9, type: 3}
+  - {fileID: 8300000, guid: 96e528e6ae3cad749be2bf07885c003b, type: 3}
+  - {fileID: 8300000, guid: 6ebc8ccaa8e752a4e8d7ae0d77f2e2ef, type: 3}
+  - {fileID: 8300000, guid: 13068b89088ab744ea0ae9a821dbe8e5, type: 3}
+  - {fileID: 8300000, guid: 9c07d6f56e83ecc41b2fbbef374ee1fe, type: 3}
+  - {fileID: 8300000, guid: d3e0dbf2ac72b5a4e9f02512f3f2b0a5, type: 3}
+  - {fileID: 8300000, guid: 6a2ea2fc0a6db28488170fab276c6cf2, type: 3}
+  - {fileID: 8300000, guid: c4db04eb669bf1344b54eb1547e8b81e, type: 3}
+  - {fileID: 8300000, guid: e8aaadd85cb740b44bd724f3b7125370, type: 3}
+  - {fileID: 8300000, guid: e8d5f1fed50fffa47a7e6f08bf98f629, type: 3}
+  - {fileID: 8300000, guid: 822cb3838ad605f4a846af27a65927bf, type: 3}
+  - {fileID: 8300000, guid: 310d4aaa3e36b56418df9e0122ef7abc, type: 3}
+  hits:
   - {fileID: 0}
   - {fileID: 0}
   blocks:

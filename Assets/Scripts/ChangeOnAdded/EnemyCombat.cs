@@ -59,10 +59,10 @@ public class EnemyCombat : StatsBehaviour
     public Sprite blood, shield;
 
     [Header("Audio")]
-    public AudioSource[] attacks = new AudioSource[2];
-    public AudioSource[] hitsArmour = new AudioSource[2];
-    public AudioSource[] hitsFlesh = new AudioSource[2];
-    public AudioSource[] blocks = new AudioSource[2];
+    public AudioSource ac;
+    public AudioClip[] attacks = new AudioClip[2];
+    public AudioClip[] hits = new AudioClip[2];
+    public AudioClip[] blocks = new AudioClip[2];
 
     private bool act;
 
@@ -109,7 +109,7 @@ public class EnemyCombat : StatsBehaviour
 
         hp = baseHp + (15 * vitality);
         stamina = baseStamina + (10 * endurance);
-        movementSpeed = baseSpeed + (0.7f * dexterity);
+        movementSpeed = baseSpeed + (0.4f * dexterity);
         magicDamage = baseMgcDamage + (10 * charisma);
 
         DamageBasedOnTiers();
@@ -577,6 +577,7 @@ public class EnemyCombat : StatsBehaviour
         {
             hp = hp - playerFunction.lightDamage;
         }
+        TakesHit();
         damageTaken.text = playerFunction.lightDamage.ToString();
     }
 
@@ -592,6 +593,7 @@ public class EnemyCombat : StatsBehaviour
         {
             hp = hp - playerFunction.mediumDamage;
         }
+        TakesHit();
         damageTaken.text = playerFunction.mediumDamage.ToString();
     }
 
@@ -607,6 +609,7 @@ public class EnemyCombat : StatsBehaviour
         {
             hp = hp - playerFunction.heavyDamage;
         }
+        TakesHit();
         damageTaken.text = playerFunction.heavyDamage.ToString();
     }
 
@@ -627,22 +630,18 @@ public class EnemyCombat : StatsBehaviour
     #region sound
     void AttackSound()
     {
-        attacks[Random.Range(0, attacks.Length)].Play();
+       //
     }
 
-    void TakesHitArmour()
+    void TakesHit()
     {
-        hitsArmour[Random.Range(0, hitsArmour.Length)].Play();
-    }
-
-    void TakesHitFlesh()
-    {
-        hitsFlesh[Random.Range(0, hitsFlesh.Length)].Play();
+        ac.clip = attacks[Random.Range(0, attacks.Length)];
+        ac.Play();
     }
 
     void BlockSound()
     {
-        blocks[Random.Range(0, blocks.Length)].Play();
+       // blocks[Random.Range(0, blocks.Length)].ac.Play();
     }
 
     #endregion

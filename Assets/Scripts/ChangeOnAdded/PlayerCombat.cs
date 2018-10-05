@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerCombat : StatsBehaviour {
-
+    
     [Header("Random")]
     public static bool playerTurn;
     public Animator anim;
     public static int tierWeapon;
     public GameObject buttons;
+    public GameObject walkBackButton;
     public GameObject displayChance;
 
     [Header("HitDetection")]
@@ -54,10 +55,10 @@ public class PlayerCombat : StatsBehaviour {
     public Sprite blood, shield;
 
     [Header("Audio")]
-    public AudioSource[] attacks = new AudioSource[2];
-    public AudioSource[] hitsArmour = new AudioSource[2];
-    public AudioSource[] hitsFlesh = new AudioSource[2];
-    public AudioSource[] blocks = new AudioSource[2];
+    public AudioSource ac;
+    public AudioClip[] attacks = new AudioClip[2];
+    public AudioClip[] hits = new AudioClip[2];
+    public AudioClip[] blocks = new AudioClip[2];
 
     public static int helmArmour;
     public static int bodyArmour;
@@ -78,7 +79,7 @@ public class PlayerCombat : StatsBehaviour {
         #region Stats Calculation
         hp = baseHp + (15 * CharacterCreation.VIT);
         stamina = baseStamina + (10 * CharacterCreation.END);
-        movementSpeed = baseSpeed + (0.7f * CharacterCreation.DEX);
+        movementSpeed = baseSpeed + (0.4f * CharacterCreation.DEX);
         magicDamage = baseMgcDamage + (10 * CharacterCreation.CHAR);
         
         DamageBasedOnTiers();
@@ -132,6 +133,14 @@ public class PlayerCombat : StatsBehaviour {
         ArmourCalc();
         HealthControl();
         StaminaControl();
+        if (transform.position.x < -6)
+        {
+            walkBackButton.SetActive(false);
+        }
+        else
+        {
+            walkBackButton.SetActive(true);
+        }
     }
 
     #region  Health Stamina Ui Armour Damage Misc.
@@ -489,6 +498,7 @@ public class PlayerCombat : StatsBehaviour {
         {
             hp = hp - enemyFunction.lightDamage;
         }
+        TakesHit();
         damageTaken.text = enemyFunction.lightDamage.ToString();
     }
 
@@ -504,6 +514,7 @@ public class PlayerCombat : StatsBehaviour {
         {
             hp = hp - enemyFunction.mediumDamage;
         }
+        TakesHit();
         damageTaken.text = enemyFunction.mediumDamage.ToString();
     }
 
@@ -519,6 +530,7 @@ public class PlayerCombat : StatsBehaviour {
         {
             hp = hp - enemyFunction.heavyDamage;
         }
+        TakesHit();
         damageTaken.text = enemyFunction.heavyDamage.ToString();
     }
 
@@ -538,22 +550,18 @@ public class PlayerCombat : StatsBehaviour {
     #region sound
     void AttackSound()
     {
-        attacks[Random.Range(0, attacks.Length)].Play();
+        //
     }
 
-    void TakesHitArmour()
+    void TakesHit()
     {
-        hitsArmour[Random.Range(0, hitsArmour.Length)].Play();
-    }
-
-    void TakesHitFlesh()
-    {
-        hitsFlesh[Random.Range(0, hitsFlesh.Length)].Play();
+        ac.clip = attacks[Random.Range(0, attacks.Length)];
+        ac.Play();
     }
 
     void BlockSound()
     {
-        blocks[Random.Range(0, blocks.Length)].Play();
+       // blocks[Random.Range(0, blocks.Length)].Play();
     }
 
     #endregion
