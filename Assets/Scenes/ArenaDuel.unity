@@ -2020,6 +2020,8 @@ MonoBehaviour:
   - Faunus
   - Cupido
   - Will
+  - Gizmozius
+  - Warsteiner
   surNames:
   - Faust
   - Flavius
@@ -2042,6 +2044,7 @@ MonoBehaviour:
   - Laecanius
   - Papinius
   - Ivkovic
+  - Bossink
   BossName: Eredin The Green Flame
   duelCanvas: {fileID: 419929486}
   tournamentCanvas: {fileID: 1022201341}
