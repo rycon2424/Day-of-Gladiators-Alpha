@@ -76,6 +76,14 @@ public class EnemyCombat : StatsBehaviour
 
         act = true;
 
+        if (BeforeTheFight.isTournament)
+        {
+            baseHp = 40;
+            baseDamage = 3;
+            baseSpeed = 3;
+            baseStamina = 50;
+        }
+
         strenght = CharacterCreation.STR + Random.Range(-2, 3);
         if (strenght < 0)
         {

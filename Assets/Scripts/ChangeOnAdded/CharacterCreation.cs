@@ -42,6 +42,9 @@ public class CharacterCreation : MonoBehaviour {
     public Text luckT;
     public Text charismaT;
 
+    public AudioSource StatsSound;
+    public AudioSource DoneSound;
+
     void Start ()
     {
         availableSkillpoints = 10;
@@ -63,6 +66,7 @@ public class CharacterCreation : MonoBehaviour {
 
     public void Done()
     {
+        DoneSound.Play();
         STR = strenght;
         END = endurance;
         DEX = dexterity;
@@ -84,6 +88,7 @@ public class CharacterCreation : MonoBehaviour {
 
     public void HairNext()
     {
+        DoneSound.Play();
         if (whatHair == hairs.Length - 1)
         {
             whatHair = 0;
@@ -96,6 +101,7 @@ public class CharacterCreation : MonoBehaviour {
 
     public void HairPrev()
     {
+        DoneSound.Play();
         if (whatHair == 0)
         {
             whatHair = hairs.Length - 1;
@@ -108,6 +114,7 @@ public class CharacterCreation : MonoBehaviour {
 
     public void BeardNext()
     {
+        DoneSound.Play();
         if (whatBeard == beards.Length - 1)
         {
             whatBeard = 0;
@@ -120,6 +127,7 @@ public class CharacterCreation : MonoBehaviour {
 
     public void BeardPrev()
     {
+        DoneSound.Play();
         if (whatBeard == 0)
         {
             whatBeard = beards.Length - 1;
@@ -137,6 +145,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (availableSkillpoints > 0)
         {
+            StatsSound.Play();
             strenght = strenght + 1;
             availableSkillpoints = availableSkillpoints - 1;
         }
@@ -149,6 +158,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (strenght > 1)
         {
+            StatsSound.Play();
             strenght = strenght - 1;
             availableSkillpoints = availableSkillpoints + 1;
         }
@@ -162,6 +172,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (availableSkillpoints > 0)
         {
+            StatsSound.Play();
             endurance = endurance + 1;
             availableSkillpoints = availableSkillpoints - 1;
         }
@@ -174,6 +185,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (endurance > 1)
         {
+            StatsSound.Play();
             endurance = endurance - 1;
             availableSkillpoints = availableSkillpoints + 1;
         }
@@ -187,6 +199,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (availableSkillpoints > 0)
         {
+            StatsSound.Play();
             dexterity = dexterity + 1;
             availableSkillpoints = availableSkillpoints - 1;
         }
@@ -199,6 +212,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (dexterity > 1)
         {
+            StatsSound.Play();
             dexterity = dexterity - 1;
             availableSkillpoints = availableSkillpoints + 1;
         }
@@ -212,6 +226,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (availableSkillpoints > 0)
         {
+            StatsSound.Play();
             vitality = vitality + 1;
             availableSkillpoints = availableSkillpoints - 1;
         }
@@ -224,6 +239,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (vitality > 1)
         {
+            StatsSound.Play();
             vitality = vitality - 1;
             availableSkillpoints = availableSkillpoints + 1;
         }
@@ -237,6 +253,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (availableSkillpoints > 0)
         {
+            StatsSound.Play();
             luck = luck + 1;
             availableSkillpoints = availableSkillpoints - 1;
         }
@@ -249,6 +266,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (luck > 1)
         {
+            StatsSound.Play();
             luck = luck - 1;
             availableSkillpoints = availableSkillpoints + 1;
         }
@@ -262,6 +280,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (availableSkillpoints > 0)
         {
+            StatsSound.Play();
             charisma = charisma + 1;
             availableSkillpoints = availableSkillpoints - 1;
         }
@@ -274,6 +293,7 @@ public class CharacterCreation : MonoBehaviour {
     {
         if (charisma > 1)
         {
+            StatsSound.Play();
             charisma = charisma - 1;
             availableSkillpoints = availableSkillpoints + 1;
         }
