@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ArmourPriceSystem1 : MonoBehaviour {
+public class ArmourPriceSystem1 : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     public bool helm;
     public bool body;
@@ -17,6 +18,24 @@ public class ArmourPriceSystem1 : MonoBehaviour {
     public int numberType;
     public int price;
     public Text priceTag;
+
+    public Text shopkeeper;
+    public GameObject textBlock;
+
+    public bool isOver = false;
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        textBlock.SetActive(true);
+        shopkeeper.text = "This armour piece gives " + armourValue.ToString() + " armour.";
+        isOver = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        textBlock.SetActive(false);
+        isOver = false;
+    }
 
     private void Update()
     {

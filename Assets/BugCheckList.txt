@@ -1,14 +1,12 @@
 FEEDBACK
 
-enemy kan tijdens walk een functie doen?
-
 Stamina moet groen </
 
-Stamina bar iets duidelijker
+Stamina bar iets duidelijker </
 
-StaminaCostShow
+StaminaCostShow </
 
-StatsDiscriptions
+StatsDiscriptions </
 
 Walk minder stamina </
 
@@ -18,12 +16,14 @@ Wapens buffen of armour nerfs
 
 Enemy niet uit scherm laten lopen
 
-Damage Display
+Damage Display </
 
 
 V2 NEXT RELEASE
 
 Weapon/Armour value display
+
+Shields
 
 Ranged weapons
 

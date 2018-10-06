@@ -178,11 +178,11 @@ public class PlayerCombat : StatsBehaviour {
         {
             stamina = 0;
         }
-        if (stamina > maxStaminaInt / 2)
+        if (stamina > maxStaminaInt / 1.5f)
         {
             StaminaToChange.sprite = STFull;
         }
-        if (stamina < maxStaminaInt / 2 && stamina > maxStaminaInt / 4)
+        if (stamina < maxStaminaInt / 1.5f && stamina > maxStaminaInt / 4)
         {
             StaminaToChange.sprite = STHalf;
         }
@@ -243,13 +243,13 @@ public class PlayerCombat : StatsBehaviour {
     #region Button Functions
     public void WalkBack()
     {
-        if (stamina < 14)
+        if (stamina < WalkCost)
         {
             Sleep();
         }
         else
         {
-            stamina = stamina - 14;
+            stamina = stamina - WalkCost;
             buttons.SetActive(false);
             transform.Rotate(0, 180, 0);
             StartCoroutine(WalkBackAnim());
@@ -259,13 +259,13 @@ public class PlayerCombat : StatsBehaviour {
 
     public void WalkForward()
     {
-        if (stamina < 14)
+        if (stamina < WalkCost)
         {
             Sleep();
         }
         else
         {
-            stamina = stamina - 14;
+            stamina = stamina - WalkCost;
             buttons.SetActive(false);
             StartCoroutine(WalkForwardAnim());
             anim.SetInteger("State", 1);
@@ -289,7 +289,7 @@ public class PlayerCombat : StatsBehaviour {
 
     public void Sleep ()
     {
-        stamina = stamina + 18;
+        stamina = stamina + SleepCost;
         buttons.SetActive(false);
         anim.SetInteger("State", 6);
         StartCoroutine(Resetturn());

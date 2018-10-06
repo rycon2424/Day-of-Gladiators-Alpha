@@ -67,9 +67,7 @@ public class EnemyCombat : StatsBehaviour
     private bool act;
 
     public PlayerCombat playerFunction;
-
-
-
+    
     void Start()
     {
         damageUI.SetActive(false);
@@ -217,11 +215,11 @@ public class EnemyCombat : StatsBehaviour
         {
             stamina = 0;
         }
-        if (stamina > maxStaminaInt / 2)
+        if (stamina > maxStaminaInt / 1.5f)
         {
             StaminaToChange.sprite = STFull;
         }
-        if (stamina < maxStaminaInt / 2 && stamina > maxStaminaInt / 4)
+        if (stamina < maxStaminaInt / 1.5f && stamina > maxStaminaInt / 4)
         {
             StaminaToChange.sprite = STHalf;
         }
@@ -474,7 +472,7 @@ public class EnemyCombat : StatsBehaviour
 
     public void Sleep()
     {
-        stamina = stamina + 18;
+        stamina = stamina + SleepCost;
         anim.SetInteger("State", 6);
         StartCoroutine(ResetAnim());
     }
