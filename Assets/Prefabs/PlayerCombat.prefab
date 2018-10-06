@@ -1095,8 +1095,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1450915603808272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9381622, y: -0.8558859, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: -0.2, y: 3.1, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 4416607638996772}
   m_RootOrder: 0
@@ -2216,7 +2216,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9daea5e255139be42aef010a63023c24, type: 3}
   whatBeard: 0
   firstWeapon: {fileID: 212775624038751030}
-  secondWeapon: {fileID: 0}
+  secondWeapon: {fileID: 212926113980566894}
   helms:
   - {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
   - {fileID: 21300000, guid: f14c8aaa16f5a9046ab1d610385f5647, type: 3}
@@ -2325,6 +2325,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  shields:
+  - {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
+  - {fileID: 21300000, guid: d28bb48c7f2d7754db20b49fbeef5c8b, type: 3}
+  - {fileID: 21300000, guid: a1b435951b1644b4cb1d1e483b801283, type: 3}
+  - {fileID: 21300000, guid: a01eb61d155b5c240bad2330f4c0407a, type: 3}
+  - {fileID: 21300000, guid: 16d996b4126618b48adb80a107516ad2, type: 3}
+  - {fileID: 21300000, guid: 22d4d3df7633f0b44bc415a8cd33a8c8, type: 3}
+  - {fileID: 21300000, guid: 0ef5cd601515b05498b25b06b3b11d32, type: 3}
 --- !u!114 &114736419138742260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3765,16 +3773,16 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 40, y: 40}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212960461807916952
 SpriteRenderer:

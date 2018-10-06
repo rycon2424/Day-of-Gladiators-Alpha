@@ -54,7 +54,9 @@ public class EnemyLooks : MonoBehaviour {
 
     [Header("Weapons")]
     public Sprite[] weapons = new Sprite[17];
+    public Sprite[] shields = new Sprite[7];
 
+    public static int shieldE;
     public static int shoulderE;
     public static int gloveE;
     public static int legsE;
@@ -84,15 +86,16 @@ public class EnemyLooks : MonoBehaviour {
 
     void CasualEnemy()
     {
-        bodyE = Random.Range(0, 6);
-        helmE = Random.Range(0, 6);
-        shoulderE = Random.Range(0, 6);
-        gloveE = Random.Range(0, 6);
-        legsE = Random.Range(0, 6);
-        shoesE = Random.Range(0, 6);
+        bodyE = Random.Range(0, bodyarmours.Length);
+        helmE = Random.Range(0, helms.Length);
+        shoulderE = Random.Range(0, shoulders1.Length);
+        gloveE = Random.Range(0, gloves1.Length);
+        legsE = Random.Range(0, legs1.Length);
+        shoesE = Random.Range(0, shoes1.Length);
+        shieldE = Random.Range(0, shields.Length);
 
-        hairE = Random.Range(0, 20);
-        beardE = Random.Range(0, 12);
+        hairE = Random.Range(0, hairs.Length);
+        beardE = Random.Range(0, beards.Length);
 
         if (PlayerCombat.tierWeapon == 1)
         {
@@ -133,6 +136,7 @@ public class EnemyLooks : MonoBehaviour {
             legRight.sprite = legs2[legsE];
             shoeLeft.sprite = shoes1[shoesE];
             shoeRight.sprite = shoes2[shoesE];
+            secondWeapon.sprite = shields[shieldE];
 
             currentHair.sprite = hairs[hairE];
             currentBeard.sprite = beards[beardE];

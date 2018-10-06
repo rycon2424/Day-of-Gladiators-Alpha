@@ -49,6 +49,7 @@ public class PlayerLooks : MonoBehaviour {
 
     [Header("Weapons")]
     public Sprite[] weapons = new Sprite[17];
+    public Sprite[] shields = new Sprite[7];
     public static int weapon;
 
     public static int helmNumber;
@@ -67,6 +68,7 @@ public class PlayerLooks : MonoBehaviour {
 	void Update ()
     {
         firstWeapon.sprite = weapons[weapon];
+        secondWeapon.sprite = shields[shieldNumber];
         helm.sprite = helms[helmNumber];
         body.sprite = bodyarmours[bodyNumber];
         shoulderLeft.sprite = shoulders1[shouldersNumber];
