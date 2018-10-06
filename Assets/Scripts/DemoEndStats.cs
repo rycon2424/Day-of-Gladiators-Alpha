@@ -29,7 +29,7 @@ public class DemoEndStats : MonoBehaviour {
         STR.text = CharacterCreation.STR.ToString();
         END.text = CharacterCreation.END.ToString();
         DEX.text = CharacterCreation.DEX.ToString();
-        VIT.text = CharacterCreation.LUC.ToString();
+        VIT.text = CharacterCreation.VIT.ToString();
         LUCK.text = CharacterCreation.LUC.ToString();
         MAG.text = CharacterCreation.CHAR.ToString();
     }

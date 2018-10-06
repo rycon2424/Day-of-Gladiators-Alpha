@@ -1,0 +1,32 @@
+FEEDBACK
+
+enemy kan tijdens walk een functie doen?
+
+Stamina moet groen </
+
+Stamina bar iets duidelijker
+
+StaminaCostShow
+
+StatsDiscriptions
+
+Walk minder stamina </
+
+Geen geld verliezen als je arm bent
+
+Wapens buffen of armour nerfs
+
+Enemy niet uit scherm laten lopen
+
+Damage Display
+
+
+V2 NEXT RELEASE
+
+Weapon/Armour value display
+
+Ranged weapons
+
+Church (Potions en safegame)
+
+TournamentSystem / softcoded bosses

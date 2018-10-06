@@ -261,6 +261,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 87040825}
+--- !u!4 &88160274 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4761802781969426, guid: ed698dba3646a3b4497a0ac084e6a843,
+    type: 2}
+  m_PrefabInternal: {fileID: 1953786284}
 --- !u!1 &123097970
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411764, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.0339154, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1004,9 +1009,59 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
         type: 2}
+      propertyPath: ac
+      value: 
+      objectReference: {fileID: 597584880}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: enemyFunction
+      value: 
+      objectReference: {fileID: 928608271}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
       propertyPath: enemy
       value: 
-      objectReference: {fileID: 1602337537}
+      objectReference: {fileID: 88160274}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: healthToChange
+      value: 
+      objectReference: {fileID: 1648438770}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: StaminaToChange
+      value: 
+      objectReference: {fileID: 2001074951}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: shieldIcon
+      value: 
+      objectReference: {fileID: 931229673}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: shieldToChange
+      value: 
+      objectReference: {fileID: 931229675}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: maxHPB
+      value: 
+      objectReference: {fileID: 1495446298}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: maxStaminaB
+      value: 
+      objectReference: {fileID: 761280715}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: maxArmour
+      value: 
+      objectReference: {fileID: 864235331}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: strengthText
+      value: 
+      objectReference: {fileID: 1485743630}
     - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
         type: 2}
       propertyPath: currentHp
@@ -1032,56 +1087,6 @@ Prefab:
       propertyPath: currentArmour
       value: 
       objectReference: {fileID: 2019968098}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: maxHPB
-      value: 
-      objectReference: {fileID: 1495446298}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: maxStaminaB
-      value: 
-      objectReference: {fileID: 761280715}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: maxArmour
-      value: 
-      objectReference: {fileID: 864235331}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: strengthText
-      value: 
-      objectReference: {fileID: 1485743630}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: shieldIcon
-      value: 
-      objectReference: {fileID: 931229673}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: shieldToChange
-      value: 
-      objectReference: {fileID: 931229675}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: healthToChange
-      value: 
-      objectReference: {fileID: 1648438770}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: StaminaToChange
-      value: 
-      objectReference: {fileID: 2001074951}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: ac
-      value: 
-      objectReference: {fileID: 597584880}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: enemyFunction
-      value: 
-      objectReference: {fileID: 928608271}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
   m_IsPrefabParent: 0
@@ -1766,6 +1771,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 419929487}
     m_Modifications:
+    - target: {fileID: 114825160291137900, guid: e4a89342d05266d41b7ad2a503f6bff6,
+        type: 2}
+      propertyPath: shoulders1.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4096972595306786, guid: e4a89342d05266d41b7ad2a503f6bff6, type: 2}
       propertyPath: m_LocalPosition.x
       value: -401.15326
@@ -1810,6 +1820,24 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114825160291137900, guid: e4a89342d05266d41b7ad2a503f6bff6,
+        type: 2}
+      propertyPath: shoulders1.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: faaf55e5b2d565f46b54e40cc31d47ef,
+        type: 3}
+    - target: {fileID: 114825160291137900, guid: e4a89342d05266d41b7ad2a503f6bff6,
+        type: 2}
+      propertyPath: shoulders1.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300000, guid: faaf55e5b2d565f46b54e40cc31d47ef,
+        type: 3}
+    - target: {fileID: 114825160291137900, guid: e4a89342d05266d41b7ad2a503f6bff6,
+        type: 2}
+      propertyPath: shoulders1.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: faaf55e5b2d565f46b54e40cc31d47ef,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 114829422712531346, guid: e4a89342d05266d41b7ad2a503f6bff6, type: 2}
     - {fileID: 114106311501099462, guid: e4a89342d05266d41b7ad2a503f6bff6, type: 2}
@@ -2023,6 +2051,8 @@ MonoBehaviour:
   - Will
   - Gizmozius
   - Warsteiner
+  - Poppy
+  - Toos
   surNames:
   - Faust
   - Flavius
@@ -2046,6 +2076,7 @@ MonoBehaviour:
   - Papinius
   - Ivkovic
   - Bossink
+  - het Kwaad
   BossName: Eredin The Green Flame
   duelCanvas: {fileID: 419929486}
   tournamentCanvas: {fileID: 1022201341}
@@ -2815,7 +2846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &669275719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5995,11 +6026,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591873542}
---- !u!4 &1602337537 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4761802781969426, guid: ed698dba3646a3b4497a0ac084e6a843,
-    type: 2}
-  m_PrefabInternal: {fileID: 1953786284}
 --- !u!1 &1623239179
 GameObject:
   m_ObjectHideFlags: 0
@@ -7249,6 +7275,11 @@ Prefab:
       propertyPath: playerFunction
       value: 
       objectReference: {fileID: 765990971}
+    - target: {fileID: 114975309347537746, guid: ed698dba3646a3b4497a0ac084e6a843,
+        type: 2}
+      propertyPath: WalkCost
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed698dba3646a3b4497a0ac084e6a843, type: 2}
   m_IsPrefabParent: 0
@@ -7337,7 +7368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09411764, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.0339154, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
