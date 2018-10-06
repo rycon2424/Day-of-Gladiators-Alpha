@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CHEATMODE : MonoBehaviour {
-
-	
+    
 	void Update ()
     {
         if (Input.GetKey(KeyCode.L))
