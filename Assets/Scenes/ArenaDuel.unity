@@ -1009,59 +1009,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
         type: 2}
-      propertyPath: ac
-      value: 
-      objectReference: {fileID: 597584880}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: enemyFunction
-      value: 
-      objectReference: {fileID: 928608271}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
       propertyPath: enemy
       value: 
       objectReference: {fileID: 88160274}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: healthToChange
-      value: 
-      objectReference: {fileID: 1648438770}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: StaminaToChange
-      value: 
-      objectReference: {fileID: 2001074951}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: shieldIcon
-      value: 
-      objectReference: {fileID: 931229673}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: shieldToChange
-      value: 
-      objectReference: {fileID: 931229675}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: maxHPB
-      value: 
-      objectReference: {fileID: 1495446298}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: maxStaminaB
-      value: 
-      objectReference: {fileID: 761280715}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: maxArmour
-      value: 
-      objectReference: {fileID: 864235331}
-    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
-        type: 2}
-      propertyPath: strengthText
-      value: 
-      objectReference: {fileID: 1485743630}
     - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
         type: 2}
       propertyPath: currentHp
@@ -1087,6 +1037,56 @@ Prefab:
       propertyPath: currentArmour
       value: 
       objectReference: {fileID: 2019968098}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: maxHPB
+      value: 
+      objectReference: {fileID: 1495446298}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: maxStaminaB
+      value: 
+      objectReference: {fileID: 761280715}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: maxArmour
+      value: 
+      objectReference: {fileID: 864235331}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: strengthText
+      value: 
+      objectReference: {fileID: 1485743630}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: shieldIcon
+      value: 
+      objectReference: {fileID: 931229673}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: shieldToChange
+      value: 
+      objectReference: {fileID: 931229675}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: healthToChange
+      value: 
+      objectReference: {fileID: 1648438770}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: StaminaToChange
+      value: 
+      objectReference: {fileID: 2001074951}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: ac
+      value: 
+      objectReference: {fileID: 597584880}
+    - target: {fileID: 114663100651936794, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: enemyFunction
+      value: 
+      objectReference: {fileID: 928608271}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
   m_IsPrefabParent: 0

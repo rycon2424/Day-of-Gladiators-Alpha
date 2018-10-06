@@ -1831,7 +1831,7 @@ MonoBehaviour:
   lightChance: 0
   mediumChance: 0
   heavyChance: 0
-  WalkCost: 14
+  WalkCost: 8
   SleepCost: 18
   HeavyCost: 25
   MediumCost: 19
