@@ -99,22 +99,42 @@ public class EnemyLooks : MonoBehaviour {
 
         if (PlayerCombat.tierWeapon == 1)
         {
-            int[] numbers = new int[] { 1, 5, 9 };
+            int[] numbers = new int[] { 1,5,9 };
             weaponE = numbers[Random.Range(0, numbers.Length)];
         }
         if (PlayerCombat.tierWeapon == 2)
         {
-            int[] numbers = new int[] { 2, 6, 10 };
+            int[] numbers = new int[] { 13, 17, 21 };
             weaponE = numbers[Random.Range(0, numbers.Length)];
         }
         if (PlayerCombat.tierWeapon == 3)
         {
-            int[] numbers = new int[] { 3, 7, 11 };
+            int[] numbers = new int[] { 14, 6, 10 };
             weaponE = numbers[Random.Range(0, numbers.Length)];
         }
         if (PlayerCombat.tierWeapon == 4)
         {
-            int[] numbers = new int[] { 4, 8, 12 };
+            int[] numbers = new int[] { 2, 7, 23 };
+            weaponE = numbers[Random.Range(0, numbers.Length)];
+        }
+        if (PlayerCombat.tierWeapon == 5)
+        {
+            int[] numbers = new int[] { 3, 18, 24 };
+            weaponE = numbers[Random.Range(0, numbers.Length)];
+        }
+        if (PlayerCombat.tierWeapon == 6)
+        {
+            int[] numbers = new int[] { 4, 8, 11 };
+            weaponE = numbers[Random.Range(0, numbers.Length)];
+        }
+        if (PlayerCombat.tierWeapon == 7)
+        {
+            int[] numbers = new int[] { 15, 19, 12 };
+            weaponE = numbers[Random.Range(0, numbers.Length)];
+        }
+        if (PlayerCombat.tierWeapon == 8)
+        {
+            int[] numbers = new int[] { 16, 20, 22 };
             weaponE = numbers[Random.Range(0, numbers.Length)];
         }
     }

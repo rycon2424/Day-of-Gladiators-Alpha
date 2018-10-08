@@ -146,7 +146,7 @@ public class EnemyCombat : StatsBehaviour
 
         #region Damage
         lightDamage = baseDamage + (1 * strenght) + weaponDamage;
-        mediumDamage = baseDamage + (2 * strenght) + weaponDamage;
+        mediumDamage = baseDamage + (3 * strenght) + weaponDamage;
         heavyDamage = baseDamage + (7 * strenght) + weaponDamage;
         #endregion
 
@@ -273,6 +273,23 @@ public class EnemyCombat : StatsBehaviour
         if (PlayerCombat.tierWeapon == 4)
         {
             weaponDamage = Random.Range(18, 21);
+        }
+
+        if (PlayerCombat.tierWeapon == 5)
+        {
+            weaponDamage = Random.Range(25, 27);
+        }
+        if (PlayerCombat.tierWeapon == 6)
+        {
+            weaponDamage = Random.Range(30, 34);
+        }
+        if (PlayerCombat.tierWeapon == 7)
+        {
+            weaponDamage = Random.Range(35, 40);
+        }
+        if (PlayerCombat.tierWeapon == 8)
+        {
+            weaponDamage = Random.Range(50, 60);
         }
     }
 

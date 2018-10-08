@@ -86,7 +86,7 @@ public class PlayerCombat : StatsBehaviour {
 
         #region Damage
         lightDamage = baseDamage + (1 * CharacterCreation.STR) + weaponDamage;
-        mediumDamage = baseDamage + (2 * CharacterCreation.STR) + weaponDamage;
+        mediumDamage = baseDamage + (3 * CharacterCreation.STR) + weaponDamage;
         heavyDamage = baseDamage + (7 * CharacterCreation.STR) + weaponDamage;
         #endregion
 
@@ -216,6 +216,23 @@ public class PlayerCombat : StatsBehaviour {
         if (tierWeapon == 4)
         {
             weaponDamage = 18;
+        }
+
+        if (tierWeapon == 5)
+        {
+            weaponDamage = 25;
+        }
+        if (tierWeapon == 6)
+        {
+            weaponDamage = 30;
+        }
+        if (tierWeapon == 7)
+        {
+            weaponDamage = 35;
+        }
+        if (tierWeapon == 8)
+        {
+            weaponDamage = 50;
         }
     }
 

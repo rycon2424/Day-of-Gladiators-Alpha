@@ -59,6 +59,23 @@ public class StatsButtonHover : StatsBehaviour
         {
             weaponDamage = 18;
         }
+
+        if (PlayerCombat.tierWeapon == 5)
+        {
+            weaponDamage = 25;
+        }
+        if (PlayerCombat.tierWeapon == 6)
+        {
+            weaponDamage = 30;
+        }
+        if (PlayerCombat.tierWeapon == 7)
+        {
+            weaponDamage = 35;
+        }
+        if (PlayerCombat.tierWeapon == 8)
+        {
+            weaponDamage = 50;
+        }
     }
 
     void Update ()
@@ -79,7 +96,7 @@ public class StatsButtonHover : StatsBehaviour
         DamageBasedOnTiers();
 
         lightDamage = baseDamage + (1 * CharacterCreation.STR) + weaponDamage;
-        mediumDamage = baseDamage + (2 * CharacterCreation.STR) + weaponDamage;
+        mediumDamage = baseDamage + (3 * CharacterCreation.STR) + weaponDamage;
         heavyDamage = baseDamage + (7 * CharacterCreation.STR) + weaponDamage;
         #endregion
     }
