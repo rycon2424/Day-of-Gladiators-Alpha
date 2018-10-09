@@ -2097,6 +2097,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3207e67f419904343907443218c0bed8, type: 3}
   - {fileID: 21300000, guid: 59325c528cb3d1449bbda594483fc444, type: 3}
   - {fileID: 21300000, guid: e3c576524889afc42b6375014abb4b8f, type: 3}
+  - {fileID: 21300000, guid: 6081e2cb385b4fc419517c4f2ad4c43a, type: 3}
+  - {fileID: 21300000, guid: 8918901b9018df845b3c829ec2cec8ae, type: 3}
+  - {fileID: 21300000, guid: 53f9681572fcdac4c99c5d09c50bd2e8, type: 3}
+  - {fileID: 21300000, guid: 90f26c7c04657574dabe6d8c817e56ed, type: 3}
+  - {fileID: 21300000, guid: 981031b174711c645a909f7329cdddf0, type: 3}
+  - {fileID: 21300000, guid: 369deae29ec569a449f0e045d0f68897, type: 3}
   whatHair: 0
   currentBeard: {fileID: 1935162508}
   beards:
@@ -3790,8 +3796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -440.00006, y: -298.00943}
-  m_SizeDelta: {x: 482.5, y: 280.1}
+  m_AnchoredPosition: {x: -399, y: -286}
+  m_SizeDelta: {x: 565.5, y: 368.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856796926
 MonoBehaviour:
@@ -5460,8 +5466,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.32}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: -3}
-  m_SizeDelta: {x: 325.5, y: 46.3}
+  m_AnchoredPosition: {x: 36.7, y: -4.4}
+  m_SizeDelta: {x: 385.7, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751295872
 MonoBehaviour:
@@ -5488,14 +5494,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 20
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Makes magic and enhancements deal more damage.
+  m_Text: Makes magic and enchantments deal more damage.
 --- !u!222 &1751295873
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5798,21 +5804,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4392592337256842, guid: 3bba5f6e2a85c124c83c0601baa7dff6, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212976083357761964, guid: 3bba5f6e2a85c124c83c0601baa7dff6,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212976083357761964, guid: 3bba5f6e2a85c124c83c0601baa7dff6,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212976083357761964, guid: 3bba5f6e2a85c124c83c0601baa7dff6,
-        type: 2}
-      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

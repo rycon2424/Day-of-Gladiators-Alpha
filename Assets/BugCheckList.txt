@@ -10,9 +10,9 @@ StatsDiscriptions </
 
 Walk minder stamina </
 
-Geen geld verliezen als je arm bent
+Geen geld verliezen als je arm bent </
 
-Wapens buffen of armour nerfs
+Wapens buffen of armour nerfs </
 
 Enemy niet uit scherm laten lopen
 
@@ -21,9 +21,9 @@ Damage Display </
 
 V2 NEXT RELEASE
 
-Weapon/Armour value display
+Weapon/Armour value display </
 
-Shields
+Shields </
 
 Ranged weapons
 
