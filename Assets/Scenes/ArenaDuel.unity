@@ -1101,6 +1101,12 @@ Prefab:
       propertyPath: backWalkClamp
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 212775624038751030, guid: 84dc28497edecbb4f930bf9e69fe7bf0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84dc28497edecbb4f930bf9e69fe7bf0, type: 2}
   m_IsPrefabParent: 0
