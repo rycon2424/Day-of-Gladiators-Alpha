@@ -68,6 +68,8 @@ public class PlayerCombat : StatsBehaviour {
     public static int shoesArmour;
     public static int shieldArmour;
 
+    public float backWalkClamp;
+
     public EnemyCombat enemyFunction;
 
     void Start ()
@@ -133,7 +135,7 @@ public class PlayerCombat : StatsBehaviour {
         ArmourCalc();
         HealthControl();
         StaminaControl();
-        if (transform.position.x < -6)
+        if (transform.position.x < backWalkClamp)
         {
             walkBackButton.SetActive(false);
         }
@@ -302,6 +304,13 @@ public class PlayerCombat : StatsBehaviour {
             anim.SetInteger("State", 5);
             StartCoroutine(Resetturn());
         }
+    }
+
+    public void Swap()
+    {
+        buttons.SetActive(false);
+        anim.SetInteger("State", 8);
+        StartCoroutine(Resetturn());
     }
 
     public void Sleep ()
