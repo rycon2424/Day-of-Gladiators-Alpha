@@ -10,36 +10,76 @@ public class WeaponPriceSystem : MonoBehaviour {
     public int whatWeaponNumber;
     public int tier;
 
+    public bool isBow;
+    public static int bowNumber;
+    public int whatBowNumber;
+
     public Text priceTag;
 
     private void Update()
     {
-        if (weaponNumber == whatWeaponNumber)
+        if (!isBow)
         {
-            priceTag.text = "Bought";
+            if (weaponNumber == whatWeaponNumber)
+            {
+                priceTag.text = "Bought";
+            }
+            else
+            {
+                priceTag.text = price.ToString();
+            }
         }
-        else
+        if (isBow)
         {
-            priceTag.text = price.ToString();
+            if (bowNumber == whatBowNumber)
+            {
+                Debug.Log(bowNumber);
+                priceTag.text = "Bought";
+            }
+            else
+            {
+                priceTag.text = price.ToString();
+            }
         }
     }
 
     public void Cost()
     {
-        if (Money.coin > price || Money.coin == price)
+        if (!isBow)
         {
-            if (weaponNumber == whatWeaponNumber)
+            if (Money.coin > price || Money.coin == price)
             {
-                return;
+                if (weaponNumber == whatWeaponNumber)
+                {
+                    return;
+                }
+                else
+                {
+                    weaponNumber = whatWeaponNumber;
+                    Money.coin = Money.coin - price;
+                    PlayerLooks.weapon = weaponNumber;
+                    PlayerCombat.tierWeapon = tier;
+                    PlayerLooks.useBow = false;
+                }
             }
-            else
+        }
+
+        if (isBow)
+        {
+            if (Money.coin > price || Money.coin == price)
             {
-                print("PURCHASED");
-                weaponNumber = whatWeaponNumber;
-                Money.coin = Money.coin - price;
-                PlayerLooks.weapon = weaponNumber;
-                PlayerCombat.tierWeapon = tier;
-                Debug.Log("Current Coins = " + Money.coin);
+                if (bowNumber == whatBowNumber)
+                {
+                    return;
+                }
+                else
+                {
+                    print("Bow PURCHASED");
+                    bowNumber = whatBowNumber;
+                    Money.coin = Money.coin - price;
+                    PlayerLooks.bow = bowNumber;
+                    PlayerLooks.useBow = true;
+                }
             }
         }
     }

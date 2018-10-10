@@ -50,7 +50,10 @@ public class PlayerLooks : MonoBehaviour {
     [Header("Weapons")]
     public Sprite[] weapons = new Sprite[17];
     public Sprite[] shields = new Sprite[7];
+    public Sprite[] bows = new Sprite[4];
+    public static bool useBow;
     public static int weapon;
+    public static int bow;
 
     public static int helmNumber;
     public static int bodyNumber;
@@ -67,7 +70,14 @@ public class PlayerLooks : MonoBehaviour {
 	
 	void Update ()
     {
-        firstWeapon.sprite = weapons[weapon];
+        if (useBow)
+        {
+            firstWeapon.sprite = bows[bow];
+        }
+        if (!useBow)
+        {
+            firstWeapon.sprite = weapons[weapon];
+        }
         secondWeapon.sprite = shields[shieldNumber];
         helm.sprite = helms[helmNumber];
         body.sprite = bodyarmours[bodyNumber];
