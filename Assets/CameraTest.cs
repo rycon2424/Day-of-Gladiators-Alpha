@@ -9,7 +9,6 @@ public class CameraTest : MonoBehaviour {
     public Vector3 center;
 
     public float zoomOutDistance;
-    public float zoomInDistance;
 
     public Camera orthographicCamera;
 
@@ -25,6 +24,7 @@ public class CameraTest : MonoBehaviour {
 
         center = ((targets[0].position - targets[1].position) / 2) - targets[0].position;
         center.z = center.z + 10;
+        center.y = center.y + 1.2f;
         center = center * -1;
         orthographicCamera.transform.position = center;
         if (distance > zoomOutDistance)
