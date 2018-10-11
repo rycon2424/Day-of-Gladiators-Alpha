@@ -9,9 +9,14 @@ public class PlayerCombat : StatsBehaviour {
     public static bool playerTurn;
     public Animator anim;
     public static int tierWeapon;
+    public Transform arrowShot;
+
+    [Header("Buttons")]
     public GameObject buttons;
     public GameObject walkBackButton;
     public GameObject displayChance;
+    public GameObject swapWeapon;
+    public GameObject melee, ranged;
 
     [Header("HitDetection")]
     private Vector3 target;
@@ -135,6 +140,20 @@ public class PlayerCombat : StatsBehaviour {
         ArmourCalc();
         HealthControl();
         StaminaControl();
+        if (PlayerLooks.bow == 0)
+        {
+            swapWeapon.SetActive(false);
+        }
+        if (PlayerLooks.useBow)
+        {
+            melee.SetActive(false);
+            ranged.SetActive(true);
+        }
+        if (!PlayerLooks.useBow)
+        {
+            melee.SetActive(true);
+            ranged.SetActive(false);
+        }
         if (transform.position.x < backWalkClamp)
         {
             walkBackButton.SetActive(false);
@@ -309,6 +328,7 @@ public class PlayerCombat : StatsBehaviour {
     public void Swap()
     {
         buttons.SetActive(false);
+        PlayerLooks.useBow = !PlayerLooks.useBow;
         anim.SetInteger("State", 8);
         StartCoroutine(Resetturn());
     }
@@ -321,6 +341,35 @@ public class PlayerCombat : StatsBehaviour {
         StartCoroutine(Resetturn());
     }
 
+    public void LightShot()
+    {
+        StartCoroutine(ShootAnimLight());
+        buttons.SetActive(false);
+    }
+
+    public void HeavyShot()
+    {
+        StartCoroutine(ShootAnimHeavy());
+        buttons.SetActive(false);
+    }
+
+    IEnumerator ShootAnimLight()
+    {
+        anim.SetInteger("State", 9);
+        yield return new WaitForSeconds(0.4f);
+        Instantiate(arrowShot, new Vector3(transform.position.x, -0.8f, transform.position.z), transform.rotation);
+        StartCoroutine(Resetturn());
+    }
+
+    IEnumerator ShootAnimHeavy()
+    {
+        anim.SetInteger("State", 9);
+        yield return new WaitForSeconds(0.4f);
+        Instantiate(arrowShot, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
+        StartCoroutine(Resetturn());
+    }
+
+    #region Melee Attacks
     public void LightDamage()
     {
         if (stamina < LightCost)
@@ -419,6 +468,7 @@ public class PlayerCombat : StatsBehaviour {
             StartCoroutine(Resetturn());
         }
     }
+    #endregion
 
     #endregion
 
@@ -563,7 +613,7 @@ public class PlayerCombat : StatsBehaviour {
         damageTaken.text = enemyFunction.heavyDamage.ToString();
     }
 
-     void DamageDisplay()
+    void DamageDisplay()
     {
         if (armour > 0)
         {

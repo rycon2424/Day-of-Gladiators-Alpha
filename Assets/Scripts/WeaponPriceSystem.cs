@@ -33,7 +33,6 @@ public class WeaponPriceSystem : MonoBehaviour {
         {
             if (bowNumber == whatBowNumber)
             {
-                Debug.Log(bowNumber);
                 priceTag.text = "Bought";
             }
             else

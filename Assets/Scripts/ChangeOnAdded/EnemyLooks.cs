@@ -97,7 +97,7 @@ public class EnemyLooks : MonoBehaviour {
         hairE = Random.Range(0, hairs.Length);
         beardE = Random.Range(0, beards.Length);
 
-        if (PlayerCombat.tierWeapon == 1)
+        if (PlayerCombat.tierWeapon == 1 || PlayerCombat.tierWeapon == 0)
         {
             int[] numbers = new int[] { 1,5,9 };
             weaponE = numbers[Random.Range(0, numbers.Length)];

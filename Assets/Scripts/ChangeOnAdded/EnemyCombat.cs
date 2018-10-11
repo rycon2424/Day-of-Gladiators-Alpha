@@ -258,7 +258,7 @@ public class EnemyCombat : StatsBehaviour
 
     void DamageBasedOnTiers()
     {
-        if (PlayerCombat.tierWeapon == 1)
+        if (PlayerCombat.tierWeapon == 1 || PlayerCombat.tierWeapon == 0)
         {
             weaponDamage = Random.Range(2, 4);
         }
@@ -498,7 +498,7 @@ public class EnemyCombat : StatsBehaviour
     {
         StartCoroutine(ResetAnim());
     }
-
+    
     IEnumerator ResetAnim()
     {
         yield return new WaitForSeconds(0.25f);
@@ -635,7 +635,7 @@ public class EnemyCombat : StatsBehaviour
         TakesHit();
         damageTaken.text = playerFunction.heavyDamage.ToString();
     }
-
+    
     void DamageDisplay()
     {
         if (armour > 0)
