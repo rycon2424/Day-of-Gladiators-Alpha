@@ -133,7 +133,9 @@ public class PlayerCombat : StatsBehaviour {
     {
         if (hp < 1)
         {
-            anim.SetInteger("State", 7);
+            int chance;
+            chance = Random.Range(100, 105);
+            anim.SetInteger("State", chance);
         }
         target = enemy.transform.position;
         UIinfo();

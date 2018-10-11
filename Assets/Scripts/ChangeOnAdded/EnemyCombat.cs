@@ -162,7 +162,9 @@ public class EnemyCombat : StatsBehaviour
     {
         if (hp < 1)
         {
-            anim.SetInteger("State", 7);
+            int chance;
+            chance = Random.Range(100, 104);
+            anim.SetInteger("State", chance);
         }
         if (Input.GetKeyDown(KeyCode.H))
         {
