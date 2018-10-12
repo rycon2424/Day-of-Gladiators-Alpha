@@ -3093,9 +3093,9 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Increases movement speed.
+  m_Text: Increases movement speed and ranged damage.
 --- !u!222 &673328599
 CanvasRenderer:
   m_ObjectHideFlags: 0

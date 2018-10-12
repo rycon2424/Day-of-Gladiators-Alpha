@@ -8,7 +8,7 @@ public class CombatHitChance : MonoBehaviour {
     public Text chanceText, daamgeText, staminaText;
     public GameObject display, damageDisplay, staminaDisplay;
     public PlayerCombat pc;
-    public bool lightC, mediumC, heavyC;
+    public bool lightC, mediumC, heavyC, rangedL;
     
     void OnMouseOver()
     {
@@ -34,6 +34,13 @@ public class CombatHitChance : MonoBehaviour {
             chanceText.text = "Hit chance: " + pc.heavyChance.ToString() + "%";
             daamgeText.text = pc.heavyDamage.ToString() + " Dmg";
             staminaText.text = "Cost " + pc.HeavyCost.ToString();
+        }
+        if (rangedL)
+        {
+            damageDisplay.SetActive(true);
+            chanceText.text = "Hit chance: " + pc.lightChance.ToString() + "%";
+            daamgeText.text = pc.arrowDamageLight.ToString() + " Dmg";
+            staminaText.text = "Cost " + pc.lightShotCost.ToString();
         }
     }
 

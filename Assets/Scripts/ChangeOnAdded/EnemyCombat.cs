@@ -590,6 +590,22 @@ public class EnemyCombat : StatsBehaviour
         damageTaken.text = "Block";
     }
 
+    public void TakeLightDamageRanged()
+    {
+        damageUI.SetActive(true);
+        DamageDisplay();
+        if (armour > 0)
+        {
+            armour = armour - playerFunction.arrowDamageLight;
+        }
+        else
+        {
+            hp = hp - playerFunction.arrowDamageLight;
+        }
+        TakesHit();
+        damageTaken.text = playerFunction.arrowDamageLight.ToString();
+    }
+
     public void TakeLightDamage()
     {
         damageUI.SetActive(true);

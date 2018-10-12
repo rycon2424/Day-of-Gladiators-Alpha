@@ -21,6 +21,7 @@ public class StatsBehaviour : MonoBehaviour
     public int lightDamage;
     public int mediumDamage;
     public int heavyDamage;
+    public int arrowDamageLight;
     [Header("Chances Calculated")]
     public float lightChance;
     public float mediumChance;
@@ -33,5 +34,6 @@ public class StatsBehaviour : MonoBehaviour
     public int LightCost;
     public int DabCost;
     public int StaminaRegen;
+    public int lightShotCost;
 
 }

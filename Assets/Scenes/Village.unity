@@ -932,13 +932,13 @@ Prefab:
         type: 2}
       propertyPath: hairs.Array.data[21]
       value: 
-      objectReference: {fileID: 21300000, guid: 53f9681572fcdac4c99c5d09c50bd2e8,
+      objectReference: {fileID: 21300000, guid: 8918901b9018df845b3c829ec2cec8ae,
         type: 3}
     - target: {fileID: 114825160291137900, guid: e4a89342d05266d41b7ad2a503f6bff6,
         type: 2}
       propertyPath: hairs.Array.data[22]
       value: 
-      objectReference: {fileID: 21300000, guid: e3c576524889afc42b6375014abb4b8f,
+      objectReference: {fileID: 21300000, guid: 53f9681572fcdac4c99c5d09c50bd2e8,
         type: 3}
     - target: {fileID: 114825160291137900, guid: e4a89342d05266d41b7ad2a503f6bff6,
         type: 2}
@@ -1920,6 +1920,7 @@ MonoBehaviour:
   lightDamage: 0
   mediumDamage: 0
   heavyDamage: 0
+  arrowDamageLight: 0
   lightChance: 0
   mediumChance: 0
   heavyChance: 0
@@ -7818,6 +7819,7 @@ MonoBehaviour:
   lightDamage: 0
   mediumDamage: 0
   heavyDamage: 0
+  arrowDamageLight: 0
   lightChance: 0
   mediumChance: 0
   heavyChance: 0
@@ -8563,13 +8565,13 @@ Prefab:
         type: 2}
       propertyPath: hairs.Array.data[21]
       value: 
-      objectReference: {fileID: 21300000, guid: 53f9681572fcdac4c99c5d09c50bd2e8,
+      objectReference: {fileID: 21300000, guid: 8918901b9018df845b3c829ec2cec8ae,
         type: 3}
     - target: {fileID: 114155646048921812, guid: 9b7ea8d8fa41ab14cb7ea9c45aa709bb,
         type: 2}
       propertyPath: hairs.Array.data[22]
       value: 
-      objectReference: {fileID: 21300000, guid: e3c576524889afc42b6375014abb4b8f,
+      objectReference: {fileID: 21300000, guid: 53f9681572fcdac4c99c5d09c50bd2e8,
         type: 3}
     - target: {fileID: 114155646048921812, guid: 9b7ea8d8fa41ab14cb7ea9c45aa709bb,
         type: 2}

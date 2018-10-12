@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4451154964945816}
   - component: {fileID: 212765151771598882}
-  - component: {fileID: 114223071763519102}
+  - component: {fileID: 114526508420765488}
   m_Layer: 0
   m_Name: Arrow1
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114223071763519102
+--- !u!114 &114526508420765488
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1761182600566472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ee932518b7aca42b833d45f651b0be, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e2930b453740f0449a599fdf4216f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   skin: {fileID: 212765151771598882}
@@ -64,6 +64,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c28452d6092322942a0da09d9e26c454, type: 3}
   - {fileID: 21300000, guid: 97b324909df549f4e906a680ebe143cc, type: 3}
   speed: 7
+  targetTransform: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+  enemyFunction: {fileID: 0}
+  playerFunction: {fileID: 0}
 --- !u!212 &212765151771598882
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -73,7 +73,7 @@ public class WeaponPriceSystem : MonoBehaviour {
                 }
                 else
                 {
-                    print("Bow PURCHASED");
+                    PlayerCombat.tierRanged = tier;
                     bowNumber = whatBowNumber;
                     Money.coin = Money.coin - price;
                     PlayerLooks.bow = bowNumber;

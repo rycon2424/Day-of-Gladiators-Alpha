@@ -9,6 +9,7 @@ public class PlayerCombat : StatsBehaviour {
     public static bool playerTurn;
     public Animator anim;
     public static int tierWeapon;
+    public static int tierRanged;
     public Transform arrowShot;
 
     [Header("Buttons")]
@@ -257,6 +258,38 @@ public class PlayerCombat : StatsBehaviour {
         {
             weaponDamage = 50;
         }
+        if (tierRanged == 1)
+        {
+            arrowDamageLight = 2 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 2)
+        {
+            arrowDamageLight = 4 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 3)
+        {
+            arrowDamageLight = 6 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 4)
+        {
+            arrowDamageLight = 8 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 5)
+        {
+            arrowDamageLight = 10 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 6)
+        {
+            arrowDamageLight = 14 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 7)
+        {
+            arrowDamageLight = 20 + (2 * CharacterCreation.DEX);
+        }
+        if (tierRanged == 8)
+        {
+            arrowDamageLight = 25 + (2 * CharacterCreation.DEX);
+        }
     }
 
     void ArmourCalc()
@@ -343,33 +376,23 @@ public class PlayerCombat : StatsBehaviour {
         StartCoroutine(Resetturn());
     }
 
+    #region Ranged
+
     public void LightShot()
     {
+        stamina = stamina - lightShotCost;
         StartCoroutine(ShootAnimLight());
         buttons.SetActive(false);
     }
-
-    public void HeavyShot()
-    {
-        StartCoroutine(ShootAnimHeavy());
-        buttons.SetActive(false);
-    }
-
+    
     IEnumerator ShootAnimLight()
     {
         anim.SetInteger("State", 9);
         yield return new WaitForSeconds(0.4f);
         Instantiate(arrowShot, new Vector3(transform.position.x, -0.8f, transform.position.z), transform.rotation);
-        StartCoroutine(Resetturn());
     }
 
-    IEnumerator ShootAnimHeavy()
-    {
-        anim.SetInteger("State", 9);
-        yield return new WaitForSeconds(0.4f);
-        Instantiate(arrowShot, new Vector3(transform.position.x, 0, transform.position.z), transform.rotation);
-        StartCoroutine(Resetturn());
-    }
+    #endregion
 
     #region Melee Attacks
     public void LightDamage()
@@ -475,6 +498,12 @@ public class PlayerCombat : StatsBehaviour {
     #endregion
 
     #region Turn and Button Misc.
+
+    public void CallReset()
+    {
+        StartCoroutine(Resetturn());
+    }
+
     IEnumerator Resetturn()
     {
         StartCoroutine(ButtonVis());
