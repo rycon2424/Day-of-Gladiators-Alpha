@@ -30,6 +30,8 @@ public class PlayerCombat : StatsBehaviour {
     public Text maxStamina;
     public Text currentArmour;
     public Text damageTaken;
+    public Text arrowsText;
+    public int arrows;
     public GameObject damageUI;
 
     [Header("BeforeFight")]
@@ -143,6 +145,7 @@ public class PlayerCombat : StatsBehaviour {
         ArmourCalc();
         HealthControl();
         StaminaControl();
+        arrowsText.text = "Arrows: " + arrows.ToString();
         if (PlayerLooks.bow == 0)
         {
             swapWeapon.SetActive(false);
@@ -380,6 +383,13 @@ public class PlayerCombat : StatsBehaviour {
 
     public void LightShot()
     {
+        if (arrows == 0)
+        {
+            swapWeapon.SetActive(false);
+            Swap();
+            return;
+        }
+        arrows = arrows - 1;
         stamina = stamina - lightShotCost;
         StartCoroutine(ShootAnimLight());
         buttons.SetActive(false);
