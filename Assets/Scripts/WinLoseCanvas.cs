@@ -47,12 +47,22 @@ public class WinLoseCanvas : MonoBehaviour {
     {
         if (playerValues.hp < 1 && doOnce == true)
         {
-            goldEarnedLost = Random.Range(200, 801);
             layOut.SetActive(true);
             fightCanvas.SetActive(false);
 
-            Money.coin = Money.coin - goldEarnedLost;
-            textWinLose.text = "You lost and lose some of your coin but live to see another day. (" + goldEarnedLost.ToString() + ")";
+            if (!BeforeTheFight.isTournament)
+            {
+                goldEarnedLost = Random.Range(200, 600) + (50 * PlayerStatsSingleton.level);
+                Money.coin = Money.coin - goldEarnedLost;
+                textWinLose.text = "You lost and lose some of your coin but live to see another day. (" + goldEarnedLost.ToString() + ")";
+            }
+
+            if (BeforeTheFight.isTournament)
+            {
+                Money.coin = 0;
+                textWinLose.text = "You attempted and failed the tournament, you have lost all your coin. (" + Money.coin.ToString() + ")";
+            }
+
             if (Money.coin < 0)
             {
                 Money.coin = 0;
@@ -70,13 +80,23 @@ public class WinLoseCanvas : MonoBehaviour {
 
         if (enemyValues.hp < 1 && doOnce == true)
         {
-            goldEarnedLost = Random.Range(200, 801) + (50 * PlayerStatsSingleton.level);
             layOut.SetActive(true);
             fightCanvas.SetActive(false);
-            
-            Money.coin = Money.coin + goldEarnedLost;
-            textWinLose.text = "You won and earned some gold, well played! (" + goldEarnedLost.ToString() + ")";
-            gold.text = Money.coin.ToString();
+            if (!BeforeTheFight.isTournament)
+            {
+                goldEarnedLost = Random.Range(200, 801) + (50 * PlayerStatsSingleton.level);
+                Money.coin = Money.coin + goldEarnedLost;
+                textWinLose.text = "You won and earned some gold, well played! (" + goldEarnedLost.ToString() + ")";
+                gold.text = Money.coin.ToString();
+            }
+
+            if (BeforeTheFight.isTournament)
+            {
+                goldEarnedLost = (600 * PlayerStatsSingleton.level);
+                Money.coin = Money.coin + goldEarnedLost;
+                textWinLose.text = "You just won the tournament, bravo! You gained (" + goldEarnedLost.ToString() + "Gold)";
+                gold.text = Money.coin.ToString();
+            }
 
             xpGained = Random.Range(minimalXP, maximalXP) + (45 * PlayerStatsSingleton.level);
             currentXP = currentXP + xpGained;
