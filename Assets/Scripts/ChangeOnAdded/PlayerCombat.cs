@@ -389,6 +389,11 @@ public class PlayerCombat : StatsBehaviour {
             Swap();
             return;
         }
+        if (stamina < lightShotCost)
+        {
+            Sleep();
+            return;
+        }
         arrows = arrows - 1;
         stamina = stamina - lightShotCost;
         StartCoroutine(ShootAnimLight());

@@ -38,7 +38,10 @@ public class EnemyLooks : MonoBehaviour {
 
     [Header("BossSpecific")]
     public Sprite[] BossWeapons = new Sprite[1];
-    public Sprite[] Boss1 = new Sprite[9];
+    public Sprite[] Boss1 = new Sprite[10];
+    public Sprite[] Boss2 = new Sprite[10];
+    public Sprite[] Boss3 = new Sprite[10];
+    public Sprite[] Boss4 = new Sprite[10];
 
     [Header("Armours")]
     public SpriteRenderer helm;
@@ -163,22 +166,86 @@ public class EnemyLooks : MonoBehaviour {
         }
         if (specialEnemy)
         {
-            firstWeapon.sprite = BossWeapons[0];
+            if (PlayerStatsSingleton.level == 5)
+            {
+                firstWeapon.sprite = BossWeapons[0];
 
-            helm.sprite = Boss1[0];
-            body.sprite = Boss1[1];
+                helm.sprite = Boss1[0];
+                body.sprite = Boss1[1];
 
-            shoulderLeft.sprite = Boss1[2];
-            shoulderRight.sprite = Boss1[3];
-            gloveLeft.sprite = Boss1[4];
-            gloveRight.sprite = Boss1[5];
-            legLeft.sprite = Boss1[6];
-            legRight.sprite = Boss1[7];
-            shoeLeft.sprite = Boss1[8];
-            shoeRight.sprite = Boss1[9];
+                shoulderLeft.sprite = Boss1[2];
+                shoulderRight.sprite = Boss1[3];
+                gloveLeft.sprite = Boss1[4];
+                gloveRight.sprite = Boss1[5];
+                legLeft.sprite = Boss1[6];
+                legRight.sprite = Boss1[7];
+                shoeLeft.sprite = Boss1[8];
+                shoeRight.sprite = Boss1[9];
+                secondWeapon.sprite = Boss1[10];
 
-            currentHair.sprite = hairs[0];
-            currentBeard.sprite = beards[0];
+                currentHair.sprite = hairs[0];
+                currentBeard.sprite = beards[0];
+            }
+            if (PlayerStatsSingleton.level == 10)
+            {
+                firstWeapon.sprite = BossWeapons[1];
+
+                helm.sprite = Boss2[0];
+                body.sprite = Boss2[1];
+
+                shoulderLeft.sprite = Boss2[2];
+                shoulderRight.sprite = Boss2[3];
+                gloveLeft.sprite = Boss2[4];
+                gloveRight.sprite = Boss2[5];
+                legLeft.sprite = Boss2[6];
+                legRight.sprite = Boss2[7];
+                shoeLeft.sprite = Boss2[8];
+                shoeRight.sprite = Boss2[9];
+                secondWeapon.sprite = Boss2[10];
+
+                currentHair.sprite = hairs[0];
+                currentBeard.sprite = beards[0];
+            }
+            if (PlayerStatsSingleton.level == 15)
+            {
+                firstWeapon.sprite = BossWeapons[2];
+
+                helm.sprite = Boss3[0];
+                body.sprite = Boss3[1];
+
+                shoulderLeft.sprite = Boss3[2];
+                shoulderRight.sprite = Boss3[3];
+                gloveLeft.sprite = Boss3[4];
+                gloveRight.sprite = Boss3[5];
+                legLeft.sprite = Boss3[6];
+                legRight.sprite = Boss3[7];
+                shoeLeft.sprite = Boss3[8];
+                shoeRight.sprite = Boss3[9];
+                secondWeapon.sprite = Boss3[10];
+
+                currentHair.sprite = hairs[0];
+                currentBeard.sprite = beards[0];
+            }
+            if (PlayerStatsSingleton.level == 20)
+            {
+                firstWeapon.sprite = BossWeapons[3];
+
+                helm.sprite = Boss4[0];
+                body.sprite = Boss4[1];
+
+                shoulderLeft.sprite = Boss4[2];
+                shoulderRight.sprite = Boss4[3];
+                gloveLeft.sprite = Boss4[4];
+                gloveRight.sprite = Boss4[5];
+                legLeft.sprite = Boss4[6];
+                legRight.sprite = Boss4[7];
+                shoeLeft.sprite = Boss4[8];
+                shoeRight.sprite = Boss4[9];
+                secondWeapon.sprite = Boss4[10];
+
+                currentHair.sprite = hairs[0];
+                currentBeard.sprite = beards[0];
+            }
         }
     }
 }

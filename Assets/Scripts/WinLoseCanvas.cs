@@ -142,7 +142,6 @@ public class WinLoseCanvas : MonoBehaviour {
             currentXPT.text = "LEVEL";
             maxpXPText.text = "UP!";
             currentXP = 0;
-            Debug.Log("Level Up");
             doOnceLevelUp = false;
         }
     }

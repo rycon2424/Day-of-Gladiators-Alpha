@@ -884,6 +884,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3207e67f419904343907443218c0bed8, type: 3}
   - {fileID: 21300000, guid: 59325c528cb3d1449bbda594483fc444, type: 3}
   - {fileID: 21300000, guid: e3c576524889afc42b6375014abb4b8f, type: 3}
+  - {fileID: 21300000, guid: 6081e2cb385b4fc419517c4f2ad4c43a, type: 3}
+  - {fileID: 21300000, guid: 8918901b9018df845b3c829ec2cec8ae, type: 3}
+  - {fileID: 21300000, guid: 53f9681572fcdac4c99c5d09c50bd2e8, type: 3}
+  - {fileID: 21300000, guid: 90f26c7c04657574dabe6d8c817e56ed, type: 3}
+  - {fileID: 21300000, guid: 981031b174711c645a909f7329cdddf0, type: 3}
+  - {fileID: 21300000, guid: 369deae29ec569a449f0e045d0f68897, type: 3}
   whatHair: 0
   currentBeard: {fileID: 212604451424855404}
   beards:
@@ -1026,6 +1032,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 16d996b4126618b48adb80a107516ad2, type: 3}
   - {fileID: 21300000, guid: 22d4d3df7633f0b44bc415a8cd33a8c8, type: 3}
   - {fileID: 21300000, guid: 0ef5cd601515b05498b25b06b3b11d32, type: 3}
+  bows:
+  - {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
+  - {fileID: 21300000, guid: 64db19f21884e314fbb837cd8be4ddd2, type: 3}
+  - {fileID: 21300000, guid: a6844c29aca73114287e0119a79c52b7, type: 3}
+  - {fileID: 21300000, guid: b78be5b0c87c5f440936b5bfea2b9c9a, type: 3}
+  - {fileID: 21300000, guid: ba3f2d1a7806142408dc87da133bf16d, type: 3}
+  - {fileID: 21300000, guid: a52574ead088d60489727fd09143047e, type: 3}
+  - {fileID: 21300000, guid: 68af06e081b9cc34a816a871c1316ff3, type: 3}
+  - {fileID: 21300000, guid: 6705a851e8b2abf43b667e54bead26a8, type: 3}
+  - {fileID: 21300000, guid: 5a65967469470d0448ad98b0e698eb18, type: 3}
 --- !u!114 &114829422712531346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1074,7 +1090,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1435,7 +1451,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1443,7 +1459,7 @@ SpriteRenderer:
   m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!212 &212440050475748754
 SpriteRenderer:
@@ -1750,7 +1766,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 37371c9439f700141bf2ca2bf4146ea5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1839,7 +1855,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2020,7 +2036,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 13
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8cfa194f171b5144fade1eb366a7512c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2028,7 +2044,7 @@ SpriteRenderer:
   m_Size: {x: 40, y: 40}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212795081369924520
 SpriteRenderer:
