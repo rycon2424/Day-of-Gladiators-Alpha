@@ -16,7 +16,7 @@ public class BeforeTheFight : MonoBehaviour
     public string[] surNames = new string[21];
 
     [Header("On Tournaments")]
-    public string BossName;
+    public string[] BossName = new string[4];
     public GameObject duelCanvas;
     public GameObject tournamentCanvas;
     public GameObject bossFightOst;
@@ -51,8 +51,46 @@ public class BeforeTheFight : MonoBehaviour
     {
         if (isTournament)
         {
-            bossNameC.text = BossName;
-            enemyName.text = BossName;
+            if (PlayerStatsSingleton.level == 5)
+            {
+                bossNameC.text = BossName[0];
+                enemyName.text = BossName[0];
+            }
+            if (PlayerStatsSingleton.level == 10)
+            {
+                bossNameC.text = BossName[1];
+                enemyName.text = BossName[1];
+            }
+            if (PlayerStatsSingleton.level == 15)
+            {
+                bossNameC.text = BossName[2];
+                enemyName.text = BossName[2];
+            }
+            if (PlayerStatsSingleton.level == 20)
+            {
+                bossNameC.text = BossName[3];
+                enemyName.text = BossName[3];
+            }
+            if (PlayerStatsSingleton.level == 25)
+            {
+                bossNameC.text = BossName[4];
+                enemyName.text = BossName[4];
+            }
+            if (PlayerStatsSingleton.level == 30)
+            {
+                bossNameC.text = BossName[5];
+                enemyName.text = BossName[5];
+            }
+            if (PlayerStatsSingleton.level == 35)
+            {
+                bossNameC.text = BossName[6];
+                enemyName.text = BossName[6];
+            }
+            if (PlayerStatsSingleton.level == 40)
+            {
+                bossNameC.text = BossName[7];
+                enemyName.text = BossName[7];
+            }
         }
         if (!isTournament)
         {
@@ -85,7 +123,38 @@ public class BeforeTheFight : MonoBehaviour
         }
         if (isTournament)
         {
-            enemyNameC.text = BossName;
+            if (PlayerStatsSingleton.level == 5)
+            {
+                enemyNameC.text = BossName[0];
+            }
+            if (PlayerStatsSingleton.level == 10)
+            {
+                enemyNameC.text = BossName[1];
+            }
+            if (PlayerStatsSingleton.level == 15)
+            {
+                enemyNameC.text = BossName[2];
+            }
+            if (PlayerStatsSingleton.level == 20)
+            {
+                enemyNameC.text = BossName[3];
+            }
+            if (PlayerStatsSingleton.level == 25)
+            {
+                enemyNameC.text = BossName[4];
+            }
+            if (PlayerStatsSingleton.level == 30)
+            {
+                enemyNameC.text = BossName[5];
+            }
+            if (PlayerStatsSingleton.level == 35)
+            {
+                enemyNameC.text = BossName[6];
+            }
+            if (PlayerStatsSingleton.level == 40)
+            {
+                enemyNameC.text = BossName[7];
+            }
         }
         playerNameC.text = CharacterCreation.username;
     }

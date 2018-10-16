@@ -35,6 +35,8 @@ public class EnemyLooks : MonoBehaviour {
     [Header("Shoes")]
     public Sprite[] shoes1 = new Sprite[5];
     public Sprite[] shoes2 = new Sprite[5];
+    [Header("Cape")]
+    public Sprite[] capes = new Sprite[5];
 
     [Header("BossSpecific")]
     public Sprite[] BossWeapons = new Sprite[1];
@@ -42,6 +44,7 @@ public class EnemyLooks : MonoBehaviour {
     public Sprite[] Boss2 = new Sprite[10];
     public Sprite[] Boss3 = new Sprite[10];
     public Sprite[] Boss4 = new Sprite[10];
+    public Sprite[] Boss5 = new Sprite[10];
 
     [Header("Armours")]
     public SpriteRenderer helm;
@@ -54,6 +57,7 @@ public class EnemyLooks : MonoBehaviour {
     public SpriteRenderer legRight;
     public SpriteRenderer shoeLeft;
     public SpriteRenderer shoeRight;
+    public SpriteRenderer cape;
 
     [Header("Weapons")]
     public Sprite[] weapons = new Sprite[17];
@@ -160,6 +164,7 @@ public class EnemyLooks : MonoBehaviour {
             shoeLeft.sprite = shoes1[shoesE];
             shoeRight.sprite = shoes2[shoesE];
             secondWeapon.sprite = shields[shieldE];
+            cape.sprite = capes[0];
 
             currentHair.sprite = hairs[hairE];
             currentBeard.sprite = beards[beardE];
@@ -181,6 +186,7 @@ public class EnemyLooks : MonoBehaviour {
                 legRight.sprite = Boss1[7];
                 shoeLeft.sprite = Boss1[8];
                 shoeRight.sprite = Boss1[9];
+                cape.sprite = capes[0];
                 secondWeapon.sprite = Boss1[10];
 
                 currentHair.sprite = hairs[0];
@@ -202,6 +208,7 @@ public class EnemyLooks : MonoBehaviour {
                 shoeLeft.sprite = Boss2[8];
                 shoeRight.sprite = Boss2[9];
                 secondWeapon.sprite = Boss2[10];
+                cape.sprite = capes[0];
 
                 currentHair.sprite = hairs[0];
                 currentBeard.sprite = beards[0];
@@ -222,6 +229,7 @@ public class EnemyLooks : MonoBehaviour {
                 shoeLeft.sprite = Boss3[8];
                 shoeRight.sprite = Boss3[9];
                 secondWeapon.sprite = Boss3[10];
+                cape.sprite = capes[0];
 
                 currentHair.sprite = hairs[0];
                 currentBeard.sprite = beards[0];
@@ -242,6 +250,28 @@ public class EnemyLooks : MonoBehaviour {
                 shoeLeft.sprite = Boss4[8];
                 shoeRight.sprite = Boss4[9];
                 secondWeapon.sprite = Boss4[10];
+                cape.sprite = capes[0];
+
+                currentHair.sprite = hairs[0];
+                currentBeard.sprite = beards[0];
+            }
+            if (PlayerStatsSingleton.level == 25)
+            {
+                firstWeapon.sprite = BossWeapons[3];
+
+                helm.sprite = Boss5[0];
+                body.sprite = Boss5[1];
+
+                shoulderLeft.sprite = Boss5[2];
+                shoulderRight.sprite = Boss5[3];
+                gloveLeft.sprite = Boss5[4];
+                gloveRight.sprite = Boss5[5];
+                legLeft.sprite = Boss5[6];
+                legRight.sprite = Boss5[7];
+                shoeLeft.sprite = Boss5[8];
+                shoeRight.sprite = Boss5[9];
+                secondWeapon.sprite = Boss5[10];
+                cape.sprite = capes[1];
 
                 currentHair.sprite = hairs[0];
                 currentBeard.sprite = beards[0];
