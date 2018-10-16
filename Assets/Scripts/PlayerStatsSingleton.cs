@@ -27,10 +27,4 @@ public class PlayerStatsSingleton : MonoBehaviour {
         DontDestroyOnLoad(this.gameObject);
 
     }
-    
-    private void Update()
-    {
-
-    }
-
 } 

@@ -47,6 +47,13 @@ public class ButtonSceneSwitch : MonoBehaviour {
 
     }
 
+    public void Newgame()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(sceneName);
+
+    }
+
     public void StartTournament()
     {
         if (PlayerStatsSingleton.level == levelCap)

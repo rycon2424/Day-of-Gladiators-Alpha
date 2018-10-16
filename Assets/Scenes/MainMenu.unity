@@ -189,8 +189,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1456469138}
-        m_MethodName: SceneSwap
+      - m_Target: {fileID: 1456469139}
+        m_MethodName: Load
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -741,6 +741,7 @@ GameObject:
   - component: {fileID: 1456469134}
   - component: {fileID: 1456469133}
   - component: {fileID: 1456469138}
+  - component: {fileID: 1456469139}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -863,6 +864,17 @@ MonoBehaviour:
   talkCloud: {fileID: 0}
   cantEnter: {fileID: 0}
   duelButton: {fileID: 0}
+--- !u!114 &1456469139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1456469132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1c9cfa2b4ffea4fa1fdb259da41dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1772130313
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +952,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1456469138}
-        m_MethodName: SceneSwap
+        m_MethodName: Newgame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
