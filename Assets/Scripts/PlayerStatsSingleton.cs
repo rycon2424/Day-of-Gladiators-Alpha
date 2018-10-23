@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStatsSingleton : MonoBehaviour {
 
-    public static int level = 1;
+    public static int level;
 
     private static PlayerStatsSingleton instance = null;
     public static PlayerStatsSingleton Instance
