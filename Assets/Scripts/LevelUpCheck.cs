@@ -30,7 +30,15 @@ public class LevelUpCheck : MonoBehaviour {
 
         if (BeforeTheFight.isTournament)
         {
-            SceneManager.LoadScene(levelUpScene);
+            if (oldLevel == PlayerStatsSingleton.level)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+            else
+            {
+                ButtonSceneSwitch.levelCap = ButtonSceneSwitch.levelCap + 5;
+                SceneManager.LoadScene(levelUpScene);
+            }
         }
     }
 }

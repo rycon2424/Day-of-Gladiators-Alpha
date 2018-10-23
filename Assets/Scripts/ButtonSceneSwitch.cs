@@ -59,7 +59,6 @@ public class ButtonSceneSwitch : MonoBehaviour {
         if (PlayerStatsSingleton.level == levelCap)
         {
             BeforeTheFight.isTournament = true;
-            levelCap = levelCap + 5;
             SceneManager.LoadScene(tournamentMap);
         }
         else

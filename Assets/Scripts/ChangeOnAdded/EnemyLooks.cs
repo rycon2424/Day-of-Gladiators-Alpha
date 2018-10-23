@@ -257,7 +257,7 @@ public class EnemyLooks : MonoBehaviour {
             }
             if (PlayerStatsSingleton.level == 25)
             {
-                firstWeapon.sprite = BossWeapons[3];
+                firstWeapon.sprite = BossWeapons[4];
 
                 helm.sprite = Boss5[0];
                 body.sprite = Boss5[1];

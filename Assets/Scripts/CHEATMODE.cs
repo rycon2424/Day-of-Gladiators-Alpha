@@ -15,5 +15,9 @@ public class CHEATMODE : MonoBehaviour {
         {
             PlayerStatsSingleton.level = PlayerStatsSingleton.level + 1;
         }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            ButtonSceneSwitch.levelCap = ButtonSceneSwitch.levelCap + 5;
+        }
     }
 }
