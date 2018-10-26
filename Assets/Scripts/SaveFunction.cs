@@ -10,7 +10,7 @@ public class SaveFunction : MonoBehaviour {
 
     public Text price;
     public int cost;
-
+    
     private void Update()
     {
         price.text = cost.ToString();
@@ -49,8 +49,8 @@ public class SaveFunction : MonoBehaviour {
 
             PlayerPrefs.SetInt("Sword", PlayerLooks.weapon);
             PlayerPrefs.SetInt("Bow", PlayerLooks.bow);
+            cost = PlayerStatsSingleton.level * Random.Range(150, 201);
             Money.coin = Money.coin - cost;
-            cost = cost + Random.Range(50, 201);
         }
         else if (Money.coin < cost)
         {
