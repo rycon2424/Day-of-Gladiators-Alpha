@@ -9,8 +9,20 @@ public class SaveFunction : MonoBehaviour {
     public Text info;
 
     public Text price;
-    public int cost;
-    
+    public static int cost;
+
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt("Cost") < 1)
+        {
+            cost = 1;
+        }
+        else
+        {
+            cost = PlayerPrefs.GetInt("Cost");
+        }
+    }
+
     private void Update()
     {
         price.text = cost.ToString();
@@ -51,6 +63,7 @@ public class SaveFunction : MonoBehaviour {
             PlayerPrefs.SetInt("Bow", PlayerLooks.bow);
             cost = PlayerStatsSingleton.level * Random.Range(150, 201);
             Money.coin = Money.coin - cost;
+            CoinCost();
         }
         else if (Money.coin < cost)
         {
@@ -62,6 +75,11 @@ public class SaveFunction : MonoBehaviour {
     public void Hide()
     {
         textCloud.SetActive(false);
+    }
+
+    void CoinCost()
+    {
+        PlayerPrefs.SetInt("Cost", cost);
     }
 
 }
