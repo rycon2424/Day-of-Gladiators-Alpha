@@ -15,6 +15,7 @@ public class PlayerCombat : StatsBehaviour {
     [Header("Buttons")]
     public GameObject buttons;
     public GameObject walkBackButton;
+    public GameObject walkForwardButton;
     public GameObject displayChance;
     public GameObject swapWeapon;
     public GameObject melee, ranged;
@@ -168,6 +169,14 @@ public class PlayerCombat : StatsBehaviour {
         {
             walkBackButton.SetActive(true);
         }
+        if (Vector3.Distance(target, transform.position) < 2.5f)
+        {
+            walkForwardButton.SetActive(false);
+        }
+        else
+        {
+            walkForwardButton.SetActive(true);
+        }
     }
 
     #region  Health Stamina Ui Armour Damage Misc.
@@ -263,35 +272,35 @@ public class PlayerCombat : StatsBehaviour {
         }
         if (tierRanged == 1)
         {
-            arrowDamageLight = 2 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 2 + Mathf.RoundToInt(1.5f * CharacterCreation.DEX);
         }
         if (tierRanged == 2)
         {
-            arrowDamageLight = 4 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 3 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
         if (tierRanged == 3)
         {
-            arrowDamageLight = 6 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 5 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
         if (tierRanged == 4)
         {
-            arrowDamageLight = 8 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 7 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
         if (tierRanged == 5)
         {
-            arrowDamageLight = 10 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 9 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
         if (tierRanged == 6)
         {
-            arrowDamageLight = 14 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 12 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
         if (tierRanged == 7)
         {
-            arrowDamageLight = 20 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 15 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
         if (tierRanged == 8)
         {
-            arrowDamageLight = 25 + (2 * CharacterCreation.DEX);
+            arrowDamageLight = 20 + Mathf.RoundToInt(1.3f * CharacterCreation.DEX);
         }
     }
 

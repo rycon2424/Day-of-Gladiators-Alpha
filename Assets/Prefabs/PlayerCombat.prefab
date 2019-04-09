@@ -2525,6 +2525,7 @@ MonoBehaviour:
   arrowShot: {fileID: 4451154964945816, guid: 277bc4644eafd594ea3f96bdda7b49f2, type: 2}
   buttons: {fileID: 1309077271778822}
   walkBackButton: {fileID: 1408198504621272}
+  walkForwardButton: {fileID: 1324010316753788}
   displayChance: {fileID: 1322171256928436}
   swapWeapon: {fileID: 1066776100271634}
   melee: {fileID: 1868159382562804}
